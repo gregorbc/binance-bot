@@ -1,8 +1,22 @@
-flask
-flask-socketio
-gunicorn
-eventlet
-python-binance
-sqlalchemy
-pymysql
-python-dotenv
+# Python dependencies for the Binance Futures Bot
+
+#Core web framework and server
+Flask==2.3.3
+Flask-SocketIO==5.3.6
+Flask-Cors==4.0.0
+gunicorn==21.2.0
+eventlet==0.33.3
+
+#Binance API interaction
+python-binance==1.0.19
+
+#Data handling and numerical operations
+pandas==2.1.0
+numpy==1.25.2
+
+#Database connectivity
+SQLAlchemy==2.0.20
+mysql-connector-python==8.1.0
+
+#Environment variable management
+python-dotenv==1.0.0
