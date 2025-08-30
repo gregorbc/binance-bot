@@ -29,15 +29,15 @@ from database import SessionLocal, Trade, PerformanceMetrics
 class CONFIG:
     # Global Configuration (Editable from web)
     LEVERAGE: int = 50
-    MAX_CONCURRENT_POS: int = 10
+    MAX_CONCURRENT_POS: int = 30
     FIXED_MARGIN_PER_TRADE_USDT: float = 4.0
-    NUM_SYMBOLS_TO_SCAN: int = 150
+    NUM_SYMBOLS_TO_SCAN: int = 300
     # Strategy Configuration (Editable from web)
-    ATR_MULT_SL: float = 2.0
-    ATR_MULT_TP: float = 3.0
+    ATR_MULT_SL: float = 3.0
+    ATR_MULT_TP: float = 7.0
     # Trailing Stop Configuration
-    TRAILING_STOP_ACTIVATION: float = 0.5  # % de ganancia para activar trailing stop
-    TRAILING_STOP_PERCENTAGE: float = 0.3  # % de retroceso para cerrar
+    TRAILING_STOP_ACTIVATION: float = 0.9  # % de ganancia para activar trailing stop
+    TRAILING_STOP_PERCENTAGE: float = 0.6  # % de retroceso para cerrar
     # Fixed SL/TP Configuration
     USE_FIXED_SL_TP: bool = True  # Enable fixed stop loss and take profit
     STOP_LOSS_PERCENT: float = 2.0  # % stop loss from entry price
@@ -80,7 +80,7 @@ strategy_optimizer = STRATEGY_OPTIMIZER()
 app = Flask(__name__, static_folder='static', template_folder='templates')
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'your-secret-key-here')
 CORS(app)
-socketio = SocketIO(app, async_mode='threading', cors_allowed_origins="*")
+socketio = SocketIO(app, async_mode='eventlet', cors_allowed_origins="*")
 
 # -------------------- LOGGING SETUP -------------------- #
 class SocketIOHandler(logging.Handler):
@@ -125,8 +125,8 @@ app_state = {
     "running": False,
     "status_message": "Stopped",
     "open_positions": {},
-    "trailing_stop_data": {},  # Almacena datos de trailing stop para cada posición
-    "sl_tp_data": {},  # Store SL/TP data for each position
+    "trailing_stop_data": {},
+    "sl_tp_data": {},
     "config": asdict(config),
     "performance_stats": {
         "realized_pnl": 0.0,
@@ -141,12 +141,12 @@ app_state = {
     "balance": 0.0,
     "total_investment_usd": 0.0,
     "trades_history": [],
-    "balance_history": [],  # Track balance over time
-    "risk_metrics": {  # Risk management metrics
+    "balance_history": [],
+    "risk_metrics": {
         "max_drawdown": 0.0,
         "sharpe_ratio": 0.0,
         "profit_per_day": 0.0,
-        "exposure_ratio": 0.0  # Total investment / balance
+        "exposure_ratio": 0.0
     }
 }
 state_lock = threading.Lock()
@@ -173,22 +173,17 @@ class BinanceFutures:
             raise
 
     def ensure_symbol_settings(self, symbol: str):
-        """Ensure leverage and margin type are set correctly for a symbol"""
         try:
-            # Set leverage
             _ = self._safe_api_call(self.client.futures_change_leverage, symbol=symbol, leverage=int(config.LEVERAGE))
         except Exception as e:
             log.warning(f"Leverage set issue for {symbol}: {e}")
         
         try:
-            # Set margin type
             self.client.futures_change_margin_type(symbol=symbol, marginType=config.MARGIN_TYPE)
         except BinanceAPIException as e:
-            # If margin type is already set (-4046), we can safely ignore the error.
             if e.code == -4046 or "No need to change margin type" in e.message:
-                pass  # This is expected, do nothing.
+                pass
             else:
-                # Log other, unexpected margin type errors
                 log.warning(f"Margin type set warning for {symbol}: {e}")
         except Exception as e:
             log.error(f"An unexpected error occurred setting margin type for {symbol}: {e}")
@@ -200,7 +195,7 @@ class BinanceFutures:
                 return func(*args, **kwargs)
             except BinanceAPIException as e:
                 if e.code == -4131:
-                    log.warning(f"PERCENT_PRICE error (-4131) in order. Volatile or illiquid market. Skipping.")
+                    log.warning("PERCENT_PRICE error (-4131) in order. Volatile or illiquid market. Skipping.")
                     return None
                 log.warning(f"API non-critical error: {e.message}")
                 if attempt == 2:
@@ -249,7 +244,7 @@ class BinanceFutures:
         
         if config.DRY_RUN:
             log.info(f"[DRY_RUN] place_order: {params}")
-            return {'mock': True, 'orderId': int(time.time() * 1000)}
+            return {'mock': True}
             
         return self._safe_api_call(self.client.futures_create_order, **params)
 
@@ -257,11 +252,10 @@ class BinanceFutures:
         side = SIDE_SELL if position_amt > 0 else SIDE_BUY
         if config.DRY_RUN:
             log.info(f"[DRY_RUN] close_position {symbol} {position_amt}")
-            return {'mock': True, 'orderId': int(time.time() * 1000)}
+            return {'mock': True}
         return self.place_order(symbol, side, FUTURE_ORDER_TYPE_MARKET, abs(position_amt), reduce_only=True)
 
     def cancel_order(self, symbol: str, orderId: int) -> Optional[Dict]:
-        """Cancel an order on Binance"""
         if config.DRY_RUN:
             log.info(f"[DRY_RUN] cancel_order: {orderId} for {symbol}")
             return {'mock': True}
@@ -315,7 +309,7 @@ class TradingBot:
         df = pd.DataFrame(klines, columns=[
             'timestamp', 'open', 'high', 'low', 'close', 'volume',
             'close_time', 'quote_asset_volume', 'number_of_trades',
-            'taker_bbuy_base_asset_volume', 'taker_buy_quote_asset_volume', 'ignore'
+            'taker_buy_base_asset_volume', 'taker_buy_quote_asset_volume', 'ignore'
         ])
         
         for col in ['open', 'high', 'low', 'close', 'volume']:
@@ -328,7 +322,6 @@ class TradingBot:
         df['fast_ema'] = df['close'].ewm(span=config.FAST_EMA, adjust=False).mean()
         df['slow_ema'] = df['close'].ewm(span=config.SLOW_EMA, adjust=False).mean()
         
-        # RSI calculation
         delta = df['close'].diff()
         up = np.maximum(delta, 0)
         down = -np.minimum(delta, 0)
@@ -347,13 +340,11 @@ class TradingBot:
         last = df.iloc[-1]
         prev = df.iloc[-2]
         
-        # Long signal: EMA crossover up and RSI > 50
         if (last['fast_ema'] > last['slow_ema'] and 
             prev['fast_ema'] <= prev['slow_ema'] and 
             last['rsi'] > 50):
             return 'LONG'
         
-        # Short signal: EMA crossover down and RSI < 50
         if (last['fast_ema'] < last['slow_ema'] and 
             prev['fast_ema'] >= prev['slow_ema'] and 
             last['rsi'] < 50):
@@ -362,13 +353,11 @@ class TradingBot:
         return None
 
     def check_trailing_stop(self, symbol: str, position: Dict, current_price: float):
-        """Verifica y actualiza el trailing stop para una posición"""
         with state_lock:
             trailing_data = app_state["trailing_stop_data"].get(symbol, {})
             position_side = 'LONG' if float(position['positionAmt']) > 0 else 'SHORT'
             entry_price = float(position['entryPrice'])
             
-            # Inicializar datos de trailing stop si no existen
             if symbol not in app_state["trailing_stop_data"]:
                 app_state["trailing_stop_data"][symbol] = {
                     'activated': False,
@@ -378,60 +367,48 @@ class TradingBot:
                     'last_stop_price': 0.0,
                     'stop_order_id': None
                 }
+                # BUG FIX: Re-assign the local variable after initialization
                 trailing_data = app_state["trailing_stop_data"][symbol]
             
-            # Para posiciones LONG
             if position_side == 'LONG':
-                # Actualizar el mejor precio si el precio actual es mayor
                 if current_price > trailing_data['best_price']:
                     trailing_data['best_price'] = current_price
                     log.info(f"📈 Nuevo mejor precio para {symbol}: {current_price}")
                 
-                # Calcular el porcentaje de ganancia desde la entrada
-                profit_percentage = ((current_price - entry_price) / entry_price) * 100
+                profit_percentage = ((current_price - entry_price) / entry_price) * 100 * config.LEVERAGE
                 
-                # Activar trailing stop si se alcanza el porcentaje de activación
                 if not trailing_data['activated'] and profit_percentage >= config.TRAILING_STOP_ACTIVATION:
                     trailing_data['activated'] = True
                     trailing_data['current_stop'] = trailing_data['best_price'] * (1 - config.TRAILING_STOP_PERCENTAGE / 100)
                     log.info(f"🔔 Trailing stop activado para {symbol} @ {trailing_data['current_stop']}")
                 
-                # Si el trailing stop está activo, actualizarlo
                 if trailing_data['activated']:
                     new_stop = trailing_data['best_price'] * (1 - config.TRAILING_STOP_PERCENTAGE / 100)
                     if new_stop > trailing_data['current_stop']:
                         trailing_data['current_stop'] = new_stop
                         log.info(f"🔄 Trailing stop actualizado para {symbol}: {new_stop}")
                 
-                # Verificar si se debe cerrar la posición
                 if trailing_data['activated'] and current_price <= trailing_data['current_stop']:
                     log.info(f"🔴 Cierre por trailing stop: {symbol} @ {current_price} (Stop: {trailing_data['current_stop']})")
                     return True
-            
-            # Para posiciones SHORT
-            else:
-                # Actualizar el mejor precio si el precio actual es menor
+            else: # SHORT position
                 if current_price < trailing_data['best_price']:
                     trailing_data['best_price'] = current_price
                     log.info(f"📉 Nuevo mejor precio para {symbol}: {current_price}")
                 
-                # Calcular el porcentaje de ganancia desde la entrada
-                profit_percentage = ((entry_price - current_price) / entry_price) * 100
+                profit_percentage = ((entry_price - current_price) / entry_price) * 100 * config.LEVERAGE
                 
-                # Activar trailing stop si se alcanza el porcentaje de activación
                 if not trailing_data['activated'] and profit_percentage >= config.TRAILING_STOP_ACTIVATION:
                     trailing_data['activated'] = True
                     trailing_data['current_stop'] = trailing_data['best_price'] * (1 + config.TRAILING_STOP_PERCENTAGE / 100)
                     log.info(f"🔔 Trailing stop activado para {symbol} @ {trailing_data['current_stop']}")
                 
-                # Si el trailing stop está activo, actualizarlo
                 if trailing_data['activated']:
                     new_stop = trailing_data['best_price'] * (1 + config.TRAILING_STOP_PERCENTAGE / 100)
                     if new_stop < trailing_data['current_stop']:
                         trailing_data['current_stop'] = new_stop
                         log.info(f"🔄 Trailing stop actualizado para {symbol}: {new_stop}")
                 
-                # Verificar si se debe cerrar la posición
                 if trailing_data['activated'] and current_price >= trailing_data['current_stop']:
                     log.info(f"🔴 Cierre por trailing stop: {symbol} @ {current_price} (Stop: {trailing_data['current_stop']})")
                     return True
@@ -439,7 +416,6 @@ class TradingBot:
             return False
 
     def check_fixed_sl_tp(self, symbol: str, position: Dict, current_price: float):
-        """Check fixed stop loss and take profit for a position"""
         if not config.USE_FIXED_SL_TP:
             return False
             
@@ -449,15 +425,13 @@ class TradingBot:
             entry_price = float(position['entryPrice'])
             
             if 'sl_price' not in sl_tp_data:
-                # Calculate SL and TP prices
                 if position_side == 'LONG':
                     sl_price = entry_price * (1 - config.STOP_LOSS_PERCENT / 100)
                     tp_price = entry_price * (1 + config.TAKE_PROFIT_PERCENT / 100)
-                else:  # SHORT
+                else:
                     sl_price = entry_price * (1 + config.STOP_LOSS_PERCENT / 100)
                     tp_price = entry_price * (1 - config.TAKE_PROFIT_PERCENT / 100)
                 
-                # Update the state with the calculated prices
                 app_state["sl_tp_data"][symbol] = {
                     'sl_price': sl_price,
                     'tp_price': tp_price,
@@ -474,7 +448,6 @@ class TradingBot:
                 log.warning(f"SL/TP prices not found for {symbol} after initialization attempt.")
                 return False
 
-            # Check if price hit SL or TP
             if position_side == 'LONG':
                 if current_price <= sl_price:
                     log.info(f"🔴 Cierre por STOP LOSS: {symbol} @ {current_price} (SL: {sl_price})")
@@ -482,7 +455,7 @@ class TradingBot:
                 elif current_price >= tp_price:
                     log.info(f"🟢 Cierre por TAKE PROFIT: {symbol} @ {current_price} (TP: {tp_price})")
                     return 'TP'
-            else: # SHORT
+            else:
                 if current_price >= sl_price:
                     log.info(f"🔴 Cierre por STOP LOSS: {symbol} @ {current_price} (SL: {sl_price})")
                     return 'SL'
@@ -493,39 +466,27 @@ class TradingBot:
             return False
 
     def check_balance_risk(self, account_info):
-        """Check account balance and risk metrics"""
         if not account_info:
             return False
             
-        # Get USDT balance
         usdt_balance = next((float(a.get('walletBalance', 0) or 0) for a in account_info.get('assets', []) if a.get('asset') == 'USDT'), 0.0)
         
-        # Check if balance is below threshold
         if usdt_balance < config.MIN_BALANCE_THRESHOLD:
             log.warning(f"⚠️ Balance bajo: {usdt_balance} USDT (mínimo: {config.MIN_BALANCE_THRESHOLD} USDT)")
             return True
             
-        # Calculate exposure ratio
-        open_positions = {
-            p['symbol']: p for p in account_info['positions']
-            if float(p['positionAmt']) != 0
-        }
-        
+        open_positions = {p['symbol']: p for p in account_info['positions'] if float(p['positionAmt']) != 0}
         total_investment = sum(float(p.get('initialMargin', 0) or 0) for p in open_positions.values())
         exposure_ratio = total_investment / usdt_balance if usdt_balance > 0 else 0
         
-        # Update risk metrics
         with state_lock:
             app_state["risk_metrics"]["exposure_ratio"] = exposure_ratio
-            
-            # Calculate max drawdown
             if len(app_state["balance_history"]) > 0:
                 peak = max(app_state["balance_history"])
                 current = usdt_balance
                 drawdown = (peak - current) / peak * 100 if peak > 0 else 0
                 app_state["risk_metrics"]["max_drawdown"] = max(app_state["risk_metrics"]["max_drawdown"], drawdown)
             
-            # Add to balance history (keep last 100 records)
             app_state["balance_history"].append(usdt_balance)
             if len(app_state["balance_history"]) > 100:
                 app_state["balance_history"].pop(0)
@@ -533,10 +494,9 @@ class TradingBot:
         return False
 
     def analyze_trading_performance(self, symbol: str):
-        """Analiza el rendimiento histórico para un símbolo y sugiere mejoras"""
-        db = SessionLocal()
         try:
-            # Obtener trades recientes para este símbolo
+            db = SessionLocal()
+            
             recent_trades = db.query(Trade).filter(
                 Trade.symbol == symbol,
                 Trade.timestamp >= datetime.now() - timedelta(hours=strategy_optimizer.OPTIMIZATION_INTERVAL)
@@ -545,19 +505,16 @@ class TradingBot:
             if len(recent_trades) < strategy_optimizer.MIN_TRADES_FOR_ANALYSIS:
                 return None
                 
-            # Calcular métricas de rendimiento
             winning_trades = [t for t in recent_trades if t.pnl > 0]
             losing_trades = [t for t in recent_trades if t.pnl < 0]
             
             win_rate = len(winning_trades) / len(recent_trades) if recent_trades else 0
             avg_win = sum(t.pnl for t in winning_trades) / len(winning_trades) if winning_trades else 0
             avg_loss = abs(sum(t.pnl for t in losing_trades) / len(losing_trades)) if losing_trades else 0
-            profit_factor = (avg_win * len(winning_trades)) / (avg_loss * len(losing_trades)) if losing_trades and avg_loss > 0 else float('inf')
+            profit_factor = (avg_win * len(winning_trades)) / (avg_loss * len(losing_trades)) if losing_trades else float('inf')
             
-            # Analizar volatilidad del mercado
             klines = self.get_klines_for_symbol(symbol)
             if klines is not None:
-                # Calcular ATR (Average True Range)
                 high_low = klines['high'] - klines['low']
                 high_close = abs(klines['high'] - klines['close'].shift())
                 low_close = abs(klines['low'] - klines['close'].shift())
@@ -566,7 +523,6 @@ class TradingBot:
             else:
                 atr = 0
                 
-            # Determinar leverage recomendado basado en el rendimiento
             if win_rate > 0.7 and profit_factor > 2.0:
                 recommended_leverage = min(config.LEVERAGE + strategy_optimizer.LEVERAGE_ADJUSTMENT_STEP, 
                                          strategy_optimizer.MAX_LEVERAGE)
@@ -576,15 +532,12 @@ class TradingBot:
             else:
                 recommended_leverage = config.LEVERAGE
                 
-            # Ajustar leverage basado en volatilidad
             if atr > strategy_optimizer.VOLATILITY_THRESHOLD:
                 recommended_leverage = max(recommended_leverage - strategy_optimizer.LEVERAGE_ADJUSTMENT_STEP, 
                                          strategy_optimizer.MIN_LEVERAGE)
                 
-            # Calcular efectividad de la estrategia
             strategy_effectiveness = win_rate * profit_factor if profit_factor != float('inf') else win_rate * 10
             
-            # Guardar métricas en la base de datos
             metrics = PerformanceMetrics(
                 symbol=symbol,
                 win_rate=win_rate,
@@ -613,16 +566,14 @@ class TradingBot:
             
         except Exception as e:
             log.error(f"Error analizando rendimiento para {symbol}: {e}")
-            db.rollback()
             return None
         finally:
             db.close()
 
     def optimize_strategy_based_on_losses(self):
-        """Optimiza la estrategia basándose en trades perdedores"""
-        db = SessionLocal()
         try:
-            # Obtener trades perdedores recientes
+            db = SessionLocal()
+            
             losing_trades = db.query(Trade).filter(
                 Trade.pnl < 0,
                 Trade.timestamp >= datetime.now() - timedelta(hours=strategy_optimizer.OPTIMIZATION_INTERVAL)
@@ -631,11 +582,9 @@ class TradingBot:
             if not losing_trades:
                 return
                 
-            # Analizar patrones comunes en trades perdedores
             losing_symbols = [t.symbol for t in losing_trades]
             symbol_loss_count = {symbol: losing_symbols.count(symbol) for symbol in set(losing_symbols)}
             
-            # Encontrar símbolos con mayor porcentaje de pérdidas
             total_trades_by_symbol = {}
             for symbol in set(losing_symbols):
                 total_trades = db.query(Trade).filter(
@@ -647,10 +596,9 @@ class TradingBot:
             problem_symbols = {
                 symbol: loss_count / total_trades_by_symbol[symbol]
                 for symbol, loss_count in symbol_loss_count.items()
-                if total_trades_by_symbol[symbol] > 0 and loss_count / total_trades_by_symbol[symbol] > 0.7  # Más del 70% de pérdidas
+                if total_trades_by_symbol[symbol] > 0 and loss_count / total_trades_by_symbol[symbol] > 0.7
             }
             
-            # Ajustar estrategia para símbolos problemáticos
             for symbol, loss_ratio in problem_symbols.items():
                 log.warning(f"⚠️ Símbolo problemático detectado: {symbol} con {loss_ratio:.2%} de trades perdedores")
                 
@@ -671,64 +619,47 @@ class TradingBot:
                 self.cycle_count += 1
                 log.info(f"--- 🔄 New scanning cycle ({self.cycle_count}) ---")
 
-                # Clean signal memory periodically
                 if self.cycle_count % config.SIGNAL_COOLDOWN_CYCLES == 1 and self.cycle_count > 1:
                     log.info("🧹 Cleaning recent signals memory (cooldown).")
                     self.recently_signaled.clear()
                 
-                # Get account info
                 account_info = self.api._safe_api_call(self.api.client.futures_account)
                 if not account_info:
                     time.sleep(config.POLL_SEC)
                     continue
                 
-                # Check balance and risk
                 low_balance = self.check_balance_risk(account_info)
                 if low_balance:
                     log.warning("⏸️ Pausando nuevas operaciones por balance bajo")
                 
-                # Process open positions
-                open_positions = {
-                    p['symbol']: p for p in account_info['positions']
-                    if float(p['positionAmt']) != 0
-                }
+                open_positions = {p['symbol']: p for p in account_info['positions'] if float(p['positionAmt']) != 0}
                 
-                # Check trailing stop and fixed SL/TP for each position
                 for symbol, position in open_positions.items():
                     try:
-                        # Get current price
                         ticker = self.api._safe_api_call(self.api.client.futures_symbol_ticker, symbol=symbol)
                         if not ticker:
                             continue
                         
                         current_price = float(ticker['price'])
-                        
-                        # Check if trailing stop should trigger
                         should_close_trailing = self.check_trailing_stop(symbol, position, current_price)
-                        
-                        # Check if fixed SL/TP should trigger
                         sl_tp_signal = self.check_fixed_sl_tp(symbol, position, current_price)
-                        
                         should_close = should_close_trailing or (sl_tp_signal in ['SL', 'TP'])
                         
-                        if should_close:
-                            # Close position due to stop condition
+                        if should_close and not config.DRY_RUN:
                             result = self.api.close_position(symbol, float(position['positionAmt']))
                             
                             if result:
-                                # Get realized PnL
-                                pnl_records = self.api._safe_api_call(self.api.client.futures_user_trades, symbol=symbol, limit=10)
+                                pnl_records = self.api._safe_api_call(self.api.client.futures_account_trades, symbol=symbol, limit=10)
                                 realized_pnl = 0.0
                                 if pnl_records:
                                     realized_pnl = sum(float(trade.get('realizedPnl', 0)) for trade in pnl_records if trade.get('orderId') == result.get('orderId'))
                                 
-                                # Determine close type
                                 close_type = "trailing_stop" if should_close_trailing else sl_tp_signal.lower()
                                 
-                                # Record the trade
                                 with state_lock:
-                                    initial_margin = float(position.get('initialMargin', 0))
-                                    roe = (realized_pnl / initial_margin) * 100 if initial_margin > 0 else 0.0
+                                    stats = app_state["performance_stats"]
+                                    stats["realized_pnl"] += realized_pnl
+                                    stats["trades_count"] += 1
                                     
                                     trade_record = {
                                         "symbol": symbol,
@@ -737,18 +668,21 @@ class TradingBot:
                                         "entryPrice": float(position['entryPrice']),
                                         "exitPrice": current_price,
                                         "pnl": realized_pnl,
-                                        "roe": roe,
+                                        "roe": (realized_pnl / (abs(float(position['positionAmt'])) * float(position['entryPrice']))) * 100 * config.LEVERAGE if float(position['entryPrice']) else 0.0,
                                         "closeType": close_type,
                                         "timestamp": time.time(),
                                         "date": datetime.now().isoformat()
                                     }
                                     app_state["trades_history"].append(trade_record)
                                     
-                                    # Remove from trailing stop data
+                                    if realized_pnl >= 0:
+                                        stats["wins"] += 1
+                                    else:
+                                        stats["losses"] += 1
+                                    
                                     if symbol in app_state["trailing_stop_data"]:
                                         del app_state["trailing_stop_data"][symbol]
                                     
-                                    # Remove from SL/TP data
                                     if symbol in app_state["sl_tp_data"]:
                                         del app_state["sl_tp_data"][symbol]
                                 
@@ -757,40 +691,27 @@ class TradingBot:
                     except Exception as e:
                         log.error(f"Error checking stops for {symbol}: {e}", exc_info=True)
                 
-                # Emit real-time PnL updates
                 if open_positions:
                     socketio.emit('pnl_update', {
                         p['symbol']: float(p.get('unrealizedProfit', 0) or 0)
                         for p in open_positions.values()
                     })
 
-                # Análisis de rendimiento y optimización
-                if self.cycle_count % 60 == 0:  # Ejecutar cada 10 minutos aproximadamente
+                if self.cycle_count % 6 == 0:
                     try:
                         self.optimize_strategy_based_on_losses()
-                        
-                        # Analizar rendimiento para símbolos con posiciones abiertas
                         for symbol in open_positions.keys():
                             self.analyze_trading_performance(symbol)
-                            
                     except Exception as e:
                         log.error(f"Error en análisis de rendimiento: {e}")
 
-                # Scan for new signals if we have room for more positions and balance is sufficient
                 num_open_pos = len(open_positions)
                 if num_open_pos < config.MAX_CONCURRENT_POS and not low_balance:
-                    symbols_to_scan = [
-                        s for s in self.get_top_symbols()
-                        if s not in open_positions and s not in self.recently_signaled
-                    ]
-                    
+                    symbols_to_scan = [s for s in self.get_top_symbols() if s not in open_positions and s not in self.recently_signaled]
                     log.info(f"🔍 Scanning {len(symbols_to_scan)} symbols for new signals.")
                     
                     with ThreadPoolExecutor(max_workers=config.MAX_WORKERS_KLINE) as executor:
-                        futures = {
-                            executor.submit(self.get_klines_for_symbol, s): s
-                            for s in symbols_to_scan
-                        }
+                        futures = {executor.submit(self.get_klines_for_symbol, s): s for s in symbols_to_scan}
                         
                         for future in futures:
                             symbol = futures[future]
@@ -806,38 +727,22 @@ class TradingBot:
                                 log.info(f"🔥 Signal found! {signal} on {symbol}")
                                 self.recently_signaled.add(symbol)
                                 self.open_trade(symbol, signal, df.iloc[-1])
-                                
-                                # Check if we've reached the position limit
                                 if len(open_positions) + 1 >= config.MAX_CONCURRENT_POS:
                                     log.info("🚫 Concurrent positions limit reached.")
                                     break
                 
-                # Update application state
                 with state_lock:
-                    db = SessionLocal()
-                    try:
-                        # Fetch trade stats from database for accuracy
-                        trades_count = db.query(Trade).count()
-                        wins = db.query(Trade).filter(Trade.pnl > 0).count()
-                        losses = db.query(Trade).filter(Trade.pnl < 0).count()
-                        realized_pnl = db.query(func.sum(Trade.pnl)).scalar() or 0.0
-
-                        total_win = db.query(func.sum(Trade.pnl)).filter(Trade.pnl > 0).scalar() or 0.0
-                        total_loss = abs(db.query(func.sum(Trade.pnl)).filter(Trade.pnl < 0).scalar() or 0.0)
-
-                        stats = app_state["performance_stats"]
-                        stats["trades_count"] = trades_count
-                        stats["wins"] = wins
-                        stats["losses"] = losses
-                        stats["realized_pnl"] = realized_pnl
-                        stats["win_rate"] = (wins / trades_count) * 100 if trades_count > 0 else 0
-                        stats["avg_win"] = total_win / wins if wins > 0 else 0
-                        stats["avg_loss"] = total_loss / losses if losses > 0 else 0
+                    stats = app_state["performance_stats"]
+                    if stats["trades_count"] > 0:
+                        stats["win_rate"] = (stats["wins"] / stats["trades_count"]) * 100
+                        winning_trades = [t for t in app_state["trades_history"] if t.get('pnl', 0) > 0]
+                        stats["avg_win"] = sum(t.get('pnl', 0) for t in winning_trades) / len(winning_trades) if winning_trades else 0
+                        losing_trades = [t for t in app_state["trades_history"] if t.get('pnl', 0) < 0]
+                        stats["avg_loss"] = abs(sum(t.get('pnl', 0) for t in losing_trades) / len(losing_trades)) if losing_trades else 0
+                        total_win = sum(t.get('pnl', 0) for t in app_state["trades_history"] if t.get('pnl', 0) > 0)
+                        total_loss = abs(sum(t.get('pnl', 0) for t in app_state["trades_history"] if t.get('pnl', 0) < 0))
                         stats["profit_factor"] = total_win / total_loss if total_loss > 0 else float('inf')
-                    finally:
-                        db.close()
 
-                    # Get USDT balance
                     usdt_balance = next((float(a.get('walletBalance', 0) or 0) for a in account_info.get('assets', []) if a.get('asset') == 'USDT'), 0.0)
                     
                     app_state.update({
@@ -847,8 +752,6 @@ class TradingBot:
                         "total_investment_usd": sum(float(p.get('initialMargin', 0) or 0) for p in open_positions.values()),
                         "performance_stats": stats
                     })
-                    
-                    # Emit state update to all connected clients
                     socketio.emit('status_update', app_state)
 
             except Exception as e:
@@ -863,9 +766,7 @@ class TradingBot:
             log.info(f"[DRY RUN] Would open {side} on {symbol}")
             return
 
-        # Ensure symbol settings (leverage, margin type)
         self.api.ensure_symbol_settings(symbol)
-        
         filters = self.api.get_symbol_filters(symbol)
         if not filters:
             log.error(f"No filters for {symbol}")
@@ -873,16 +774,13 @@ class TradingBot:
 
         price = float(last_candle['close'])
         
-        # Calculate position size based on risk management
         with state_lock:
             balance = app_state.get("balance", 0)
         
-        # Use risk-based position sizing if balance is available
         if balance > 0 and config.RISK_PER_TRADE_PERCENT > 0:
             risk_amount = balance * (config.RISK_PER_TRADE_PERCENT / 100)
             quantity = (risk_amount * config.LEVERAGE) / price
         else:
-            # Fall back to fixed margin
             quantity = (config.FIXED_MARGIN_PER_TRADE_USDT * config.LEVERAGE) / price
             
         quantity = self.api.round_value(quantity, filters['stepSize'])
@@ -894,7 +792,6 @@ class TradingBot:
         order_side = SIDE_BUY if side == 'LONG' else SIDE_SELL
         tick_size = filters['tickSize']
         
-        # Place slightly off-market limit order
         limit_price = price + tick_size * 5 if side == 'LONG' else price - tick_size * 5
         limit_price = self.api.round_value(limit_price, tick_size)
         
@@ -904,7 +801,6 @@ class TradingBot:
         if order and order.get('orderId'):
             log.info(f"✅ LIMIT ORDER CREATED: {side} {quantity} {symbol} @ {limit_price}")
             
-            # Store entry price for SL/TP calculation
             with state_lock:
                 if symbol not in app_state["sl_tp_data"]:
                     app_state["sl_tp_data"][symbol] = {
@@ -923,14 +819,12 @@ def apply_exchange_trailing_stop(binance_api: BinanceFutures, symbol: str):
         if not trailing_data:
             return
             
-        # Only apply if trailing is activated
         if not trailing_data.get("activated", False):
             return
             
         stop_price = float(trailing_data.get("current_stop", 0) or 0)
         last_stop = float(trailing_data.get("last_stop_price", 0) or 0)
         
-        # If no change, skip
         if last_stop != 0 and math.isclose(last_stop, stop_price, rel_tol=1e-9):
             return
 
@@ -939,16 +833,13 @@ def apply_exchange_trailing_stop(binance_api: BinanceFutures, symbol: str):
             log.warning(f"Could not get filters for {symbol} to place trailing stop.")
             return
         
-        # Round the stop price to the required precision
         stop_price = binance_api.round_value(stop_price, filters['tickSize'])
 
-        # Get account info to check position
         acct = binance_api._safe_api_call(binance_api.client.futures_account)
         if not acct:
             log.debug(f"No account info to place stop for {symbol}")
             return
             
-        # Find the position
         pos = next((p for p in acct.get("positions", []) if p["symbol"] == symbol), None)
         if not pos or float(pos.get("positionAmt", 0)) == 0:
             return
@@ -956,14 +847,12 @@ def apply_exchange_trailing_stop(binance_api: BinanceFutures, symbol: str):
         qty = abs(float(pos["positionAmt"]))
         side = SIDE_SELL if float(pos["positionAmt"]) > 0 else SIDE_BUY
         
-        # Cancel previous stop order if exists and different
         prev_order_id = trailing_data.get("stop_order_id")
         if prev_order_id:
             canceled = binance_api.cancel_order(symbol, prev_order_id)
             if canceled:
                 log.info(f"Canceled previous stop order {prev_order_id} for {symbol}")
         
-        # Build STOP_MARKET params
         params = {
             "symbol": symbol,
             "side": side,
@@ -973,7 +862,7 @@ def apply_exchange_trailing_stop(binance_api: BinanceFutures, symbol: str):
         }
         
         if config.DRY_RUN:
-            log.info(f"[DRY_RUN] Would place STOP_MARKET for {symbol} @ {stop_price}")
+            log.info(f"[DRY RUN] Would place STOP_MARKET for {symbol} @ {stop_price}")
             with state_lock:
                 td = app_state["trailing_stop_data"].setdefault(symbol, {})
                 td["last_stop_price"] = stop_price
@@ -981,7 +870,6 @@ def apply_exchange_trailing_stop(binance_api: BinanceFutures, symbol: str):
             socketio.emit('trailing_update', {"symbol": symbol, "stop_price": stop_price, "dry_run": True})
             return
             
-        # Place the stop order
         result = binance_api._safe_api_call(binance_api.client.futures_create_order, **params)
         
         if result:
@@ -1004,22 +892,20 @@ def monitor_positions(binance_api: BinanceFutures, interval: float = 15.0):
     
     while True:
         try:
-            # Get symbols with trailing stops and open positions
             with state_lock:
+                if not app_state.get("running"):
+                    break
                 symbols = list(app_state["trailing_stop_data"].keys())
                 
-            # Get account info to check open positions
             acct = binance_api._safe_api_call(binance_api.client.futures_account)
             acct_symbols = []
             if acct:
                 acct_symbols = [p["symbol"] for p in acct.get("positions", []) if float(p.get('positionAmt', 0)) != 0]
                 
-            # Check all symbols with trailing stops or open positions
             symbols_to_check = set(symbols) | set(acct_symbols)
             
             for symbol in symbols_to_check:
                 try:
-                    # Get current mark price
                     mark = binance_api._safe_api_call(binance_api.client.futures_mark_price, symbol=symbol)
                     if not mark:
                         continue
@@ -1028,7 +914,6 @@ def monitor_positions(binance_api: BinanceFutures, interval: float = 15.0):
                     with state_lock:
                         trailing_data = app_state["trailing_stop_data"].get(symbol)
                         
-                    # If no trailing data but position exists, initialize it
                     if not trailing_data:
                         if acct:
                             pos = next((p for p in acct.get("positions", []) if p["symbol"] == symbol), None)
@@ -1046,28 +931,24 @@ def monitor_positions(binance_api: BinanceFutures, interval: float = 15.0):
                                     }
                                 trailing_data = app_state["trailing_stop_data"].get(symbol)
                     
-                    # Update trailing stop if activated
                     if trailing_data:
                         with state_lock:
                             td = app_state["trailing_stop_data"].get(symbol)
                             if not td:
                                 continue
                                 
-                            # Update best price for long positions
                             if td.get("side") == "LONG":
                                 if current_price > td.get("best_price", 0):
                                     td["best_price"] = current_price
                                     if td.get("activated"):
                                         td["current_stop"] = td["best_price"] * (1 - config.TRAILING_STOP_PERCENTAGE / 100)
-                            # Update best price for short positions
                             else:
                                 if current_price < td.get("best_price", float('inf')):
                                     td["best_price"] = current_price
                                     if td.get("activated"):
                                         td["current_stop"] = td["best_price"] * (1 + config.TRAILING_STOP_PERCENTAGE / 100)
                                         
-                        # Apply exchange trailing stop if activated
-                        if td.get("activated"):
+                        if td and td.get("activated"):
                             apply_exchange_trailing_stop(binance_api, symbol)
                             
                 except Exception as inner_e:
@@ -1128,7 +1009,6 @@ def start_bot():
     bot_thread = threading.Thread(target=bot_instance.run, daemon=True)
     bot_thread.start()
     
-    # Start trailing monitor thread if not already running
     if _trailing_monitor_thread is None or not _trailing_monitor_thread.is_alive():
         _trailing_monitor_thread = threading.Thread(
             target=monitor_positions,
@@ -1158,7 +1038,6 @@ def update_config():
     global config
     data = request.json
     
-    # Helper function to cast values to correct types
     def cast_value(current, value):
         if isinstance(current, bool):
             return str(value).lower() in ['true', '1', 'yes', 'on']
@@ -1187,7 +1066,7 @@ def update_config():
         app_state["config"] = asdict(config)
     
     log.info(f"⚙️ Configuration updated: {data}")
-    socketio.emit('config_updated', app_state["config"])
+    socketio.emit('config_updated')
     return jsonify({
         "status": "success",
         "message": "Configuration saved.",
@@ -1204,57 +1083,70 @@ def close_position_api():
         position = app_state["open_positions"].get(symbol)
     
     if not position:
-        return jsonify({"status": "error", "message": f"No position found for {symbol}"}), 404
-    
+        try: # Fallback to check directly with Binance
+            api = BinanceFutures()
+            acct = api._safe_api_call(api.client.futures_account)
+            position = next((p for p in acct.get('positions', []) if p['symbol'] == symbol and float(p['positionAmt']) != 0), None)
+            if not position:
+                return jsonify({"status": "error", "message": f"No active position found for {symbol}"}), 404
+        except Exception as e:
+            log.error(f"API check failed for closing {symbol}: {e}")
+            return jsonify({"status": "error", "message": f"No cached position and API check failed for {symbol}"}), 404
+
     try:
         api = BinanceFutures()
         result = api.close_position(symbol, float(position['positionAmt']))
         
         if result:
-            # Get realized PnL from trade history
-            pnl_records = api._safe_api_call(api.client.futures_user_trades, symbol=symbol, limit=10)
+            pnl_records = api._safe_api_call(api.client.futures_account_trades, symbol=symbol, limit=10)
             realized_pnl = 0.0
             if pnl_records:
-                realized_pnl = sum(float(trade.get('realizedPnl', 0)) for trade in pnl_records if trade.get('orderId') == result.get('orderId'))
+                order_id_to_match = result.get('orderId')
+                if order_id_to_match:
+                    realized_pnl = sum(float(trade.get('realizedPnl', 0)) for trade in pnl_records if str(trade.get('orderId')) == str(order_id_to_match))
             
-            # Get current mark price for exit price
             mark = api._safe_api_call(api.client.futures_mark_price, symbol=symbol)
             mark_price = float(mark['markPrice']) if mark else float(position['entryPrice'])
             
-            # Calculate ROE
-            initial_margin = float(position.get('initialMargin', 0))
-            roe = (realized_pnl / initial_margin) * 100 if initial_margin > 0 else 0.0
+            entry_price = float(position['entryPrice'])
+            position_size = abs(float(position['positionAmt']))
+            roe = (realized_pnl / (position_size * entry_price)) * 100 * config.LEVERAGE if entry_price else 0.0
             
-            db = SessionLocal()
-            try:
-                new_trade = Trade(
-                    symbol=symbol,
-                    side='LONG' if float(position['positionAmt']) > 0 else 'SHORT',
-                    quantity=abs(float(position['positionAmt'])),
-                    entry_price=float(position['entryPrice']),
-                    exit_price=mark_price,
-                    pnl=realized_pnl,
-                    roe=roe,
-                    leverage=int(position.get('leverage', config.LEVERAGE)),
-                    close_type="manual",
-                    timestamp=datetime.utcnow(),
-                    date=datetime.utcnow().strftime('%Y-%m-%d')
-                )
-                db.add(new_trade)
-                db.commit()
-            finally:
-                db.close()
-
             with state_lock:
-                if symbol in app_state["open_positions"]:
-                    del app_state["open_positions"][symbol]
+                stats = app_state["performance_stats"]
+                stats["realized_pnl"] += realized_pnl
+                stats["trades_count"] += 1
+                
+                trade_record = {
+                    "symbol": symbol,
+                    "side": 'LONG' if float(position['positionAmt']) > 0 else 'SHORT',
+                    "quantity": position_size,
+                    "entryPrice": entry_price,
+                    "exitPrice": mark_price,
+                    "pnl": realized_pnl,
+                    "roe": roe,
+                    "closeType": "manual",
+                    "timestamp": time.time(),
+                    "date": datetime.now().isoformat()
+                }
+                app_state["trades_history"].append(trade_record)
+                
+                if realized_pnl >= 0:
+                    stats["wins"] += 1
+                else:
+                    stats["losses"] += 1
+                
                 if symbol in app_state["trailing_stop_data"]:
                     del app_state["trailing_stop_data"][symbol]
+                
                 if symbol in app_state["sl_tp_data"]:
                     del app_state["sl_tp_data"][symbol]
-
+                
+                if symbol in app_state["open_positions"]:
+                    del app_state["open_positions"][symbol]
+            
             log.info(f"✅ Position on {symbol} closed. Realized PNL: {realized_pnl:.2f} USDT, ROE: {roe:.2f}%")
-            socketio.emit('status_update', app_state) # Notify clients of the change
+            socketio.emit('status_update', app_state)
             return jsonify({"status": "success", "message": f"Position on {symbol} closed."})
         else:
             return jsonify({"status": "error", "message": "Failed to send close order."}), 500
@@ -1275,10 +1167,8 @@ def manual_trade():
     
     try:
         api = BinanceFutures()
-        # Ensure symbol settings
         api.ensure_symbol_settings(symbol)
         
-        # Get mark price
         mark = api._safe_api_call(api.client.futures_mark_price, symbol=symbol)
         if not mark:
             return jsonify({"status": "error", "message": "Unable to fetch mark price."}), 500
@@ -1295,17 +1185,12 @@ def manual_trade():
             return jsonify({"status": "error", "message": f"Quantity ({quantity}) below minimum allowed."}), 400
         
         order_side = SIDE_BUY if side == 'LONG' else SIDE_SELL
-        tick_size = filters['tickSize']
-        limit_price = api.round_value(
-            price + tick_size * 5 if side == 'LONG' else price - tick_size * 5,
-            tick_size
-        )
         
-        order = api.place_order(symbol, order_side, FUTURE_ORDER_TYPE_LIMIT, quantity, price=limit_price)
+        order = api.place_order(symbol, order_side, FUTURE_ORDER_TYPE_MARKET, quantity)
         
-        if order and order.get('orderId'):
-            log.info(f"MANUAL TRADE CREATED: {side} {quantity} {symbol} @ {limit_price}")
-            return jsonify({"status": "success", "message": f"Manual limit order for {symbol} created."})
+        if order and (order.get('orderId') or order.get('mock')):
+            log.info(f"MANUAL TRADE CREATED: {side} {quantity} {symbol}")
+            return jsonify({"status": "success", "message": f"Manual market order for {symbol} created."})
         else:
             return jsonify({"status": "error", "message": f"Manual order failed: {order}"}), 500
             
@@ -1315,94 +1200,65 @@ def manual_trade():
 
 @app.route('/api/trade_history')
 def get_trade_history():
-    """Return enhanced trading history with pagination and filtering from the database."""
-    db = SessionLocal()
-    try:
-        query = db.query(Trade)
-
-        # Aplicar filtros si se proporcionan
-        symbol_filter = request.args.get('symbol')
-        date_filter = request.args.get('date')
-        side_filter = request.args.get('side')
-
-        if symbol_filter:
-            query = query.filter(Trade.symbol == symbol_filter)
-        if date_filter:
-            try:
-                filter_date = datetime.strptime(date_filter, '%Y-%m-%d').date()
-                query = query.filter(func.date(Trade.timestamp) == filter_date)
-            except ValueError:
-                pass # Ignore invalid date format
-        if side_filter:
-            query = query.filter(Trade.side == side_filter)
-
-        # Ordenar trades por timestamp (más recientes primero)
-        query = query.order_by(desc(Trade.timestamp))
-        
-        total_trades = query.count()
-
-        # Paginación
-        page = int(request.args.get('page', 1))
-        per_page = int(request.args.get('per_page', 20))
-        start_idx = (page - 1) * per_page
-        
-        paginated_query = query.offset(start_idx).limit(per_page)
-        trades = paginated_query.all()
-
-        trades_list = [
-            {
-                "timestamp": t.timestamp.isoformat(),
-                "symbol": t.symbol,
-                "side": t.side,
-                "quantity": t.quantity,
-                "entryPrice": t.entry_price,
-                "exitPrice": t.exit_price,
-                "pnl": t.pnl,
-                "roe": t.roe,
-                "closeType": t.close_type
-            }
-            for t in trades
-        ]
-        
-        return jsonify({
-            "trades": trades_list,
-            "total": total_trades,
-            "page": page,
-            "per_page": per_page,
-            "total_pages": (total_trades + per_page - 1) // per_page
-        })
-    except Exception as e:
-        log.error(f"Error fetching trade history: {e}")
-        return jsonify({"error": str(e)}), 500
-    finally:
-        db.close()
-
+    with state_lock:
+        trades = app_state["trades_history"]
+    
+    sorted_trades = sorted(trades, key=lambda x: x.get('timestamp', 0), reverse=True)
+    
+    symbol_filter = request.args.get('symbol')
+    date_filter = request.args.get('date')
+    side_filter = request.args.get('side')
+    
+    filtered_trades = sorted_trades
+    if symbol_filter:
+        filtered_trades = [t for t in filtered_trades if t.get('symbol') == symbol_filter]
+    if date_filter:
+        try:
+            from datetime import datetime as _dt
+            filter_date = _dt.strptime(date_filter, '%Y-%m-%d').date()
+            filtered_trades = [t for t in filtered_trades if _dt.fromtimestamp(t.get('timestamp', 0)).date() == filter_date]
+        except Exception:
+            pass
+    if side_filter:
+        filtered_trades = [t for t in filtered_trades if t.get('side') == side_filter]
+    
+    page = int(request.args.get('page', 1))
+    per_page = int(request.args.get('per_page', 20))
+    start_idx = (page - 1) * per_page
+    end_idx = start_idx + per_page
+    
+    paginated_trades = filtered_trades[start_idx:end_idx]
+    
+    return jsonify({
+        "trades": paginated_trades,
+        "total": len(filtered_trades),
+        "page": page,
+        "per_page": per_page,
+        "total_pages": (len(filtered_trades) + per_page - 1) // per_page
+    })
 
 @app.route('/api/trailing_stop_data')
 def get_trailing_stop_data():
-    """Return trailing stop data for open positions"""
     with state_lock:
         return jsonify(app_state["trailing_stop_data"])
 
 @app.route('/api/sl_tp_data')
 def get_sl_tp_data():
-    """Return SL/TP data for open positions"""
     with state_lock:
         return jsonify(app_state["sl_tp_data"])
 
 @app.route('/api/risk_metrics')
 def get_risk_metrics():
-    """Return risk metrics"""
     with state_lock:
         return jsonify(app_state["risk_metrics"])
 
 @app.route('/api/performance_metrics')
 def get_performance_metrics():
-    """Return performance metrics for symbols"""
-    db = SessionLocal()
     try:
         symbol = request.args.get('symbol')
         hours = int(request.args.get('hours', 24))
+        
+        db = SessionLocal()
         
         query = db.query(PerformanceMetrics)
         
@@ -1434,7 +1290,6 @@ def get_performance_metrics():
 
 @app.route('/api/auto_adjust_leverage', methods=['POST'])
 def auto_adjust_leverage():
-    """Ajusta automáticamente el leverage basado en el rendimiento"""
     try:
         data = request.json
         symbol = data.get('symbol')
@@ -1443,15 +1298,12 @@ def auto_adjust_leverage():
         result = bot.analyze_trading_performance(symbol)
         
         if result and 'recommended_leverage' in result:
-            # Actualizar configuración
             with state_lock:
                 config.LEVERAGE = result['recommended_leverage']
-                app_state["config"]["LEVERAGE"] = config.LEVERAGE
+                app_state["config"] = asdict(config)
                 
-            # Aplicar nuevo leverage
             bot.api.ensure_symbol_settings(symbol)
             
-            socketio.emit('config_updated', app_state["config"])
             return jsonify({
                 "status": "success", 
                 "message": f"Leverage ajustado a {result['recommended_leverage']}x para {symbol}",
@@ -1471,24 +1323,16 @@ def auto_adjust_leverage():
 @socketio.on('connect')
 def handle_connect():
     log.info(f"🔌 Client connected: {request.sid}")
-    # Send initial state to new client
     with state_lock:
-        socketio.emit('status_update', app_state, room=request.sid)
+        socketio.emit('status_update', app_state, to=request.sid)
 
 @socketio.on('disconnect')
 def handle_disconnect():
     log.info(f"🔌 Client disconnected: {request.sid}")
 
 # -------------------- MAIN FUNCTION -------------------- #
-def create_app():
-    """Application factory function"""
-    return app
-
 if __name__ == '__main__':
-    # Load environment variables
     load_dotenv()
-    
-    # Get configuration from environment
     host = os.environ.get('HOST', '0.0.0.0')
     port = int(os.environ.get('PORT', 5000))
     debug = os.environ.get('DEBUG', 'False').lower() == 'true'
@@ -1496,16 +1340,17 @@ if __name__ == '__main__':
     log.info("🚀 Starting Binance Futures Bot Web Application v10.5")
     log.info(f"🌐 Server will run on {host}:{port}")
     
-    # Create required directories
     os.makedirs('logs', exist_ok=True)
-    os.makedirs('static', exist_ok=True)
-    os.makedirs('templates', exist_ok=True)
     
-    # Initialize database
-    from database import init_db
-    init_db()
-    
-    # Run the application
+    try:
+        from database import init_db
+        init_db()
+        log.info("Database initialized successfully.")
+    except ImportError:
+        log.warning("Database module not found, continuing without it.")
+    except Exception as e:
+        log.error(f"Database initialization failed: {e}")
+
     socketio.run(
         app,
         debug=debug,
