@@ -1,0 +1,4 @@
+location ~ "^/\.well-known/acme-challenge/([-_A-Za-z0-9]+)$" {
+    default_type text/plain;
+    return 200 "$1.UzEyo9qX8GG5S-Nf1TYy0cIIMP4OYutGPnW9K4BGVHU";
+}

@@ -1,0 +1,2206 @@
+[2025-08-30 01:42:22 +0000] [5769] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 01:42:22 +0000] [5769] [INFO] Listening at: http://0.0.0.0:5000 (5769)
+[2025-08-30 01:42:22 +0000] [5769] [INFO] Using worker: eventlet
+[2025-08-30 01:42:22 +0000] [5770] [INFO] Booting worker with pid: 5770
+[2025-08-30 01:46:21 +0000] [5769] [INFO] Handling signal: int
+[2025-08-30 01:46:22 +0000] [5770] [INFO] Worker exiting (pid: 5770)
+[2025-08-30 01:46:22 +0000] [5769] [INFO] Shutting down: Master
+[2025-08-30 01:56:17 +0000] [6124] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 01:56:17 +0000] [6124] [INFO] Listening at: http://0.0.0.0:5000 (6124)
+[2025-08-30 01:56:17 +0000] [6124] [INFO] Using worker: eventlet
+[2025-08-30 01:56:17 +0000] [6145] [INFO] Booting worker with pid: 6145
+[2025-08-30 01:56:31 +0000] [6124] [INFO] Handling signal: int
+[2025-08-30 01:56:32 +0000] [6145] [INFO] Worker exiting (pid: 6145)
+[2025-08-30 01:56:32 +0000] [6124] [INFO] Shutting down: Master
+[2025-08-30 01:56:44 +0000] [6149] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 01:56:44 +0000] [6149] [INFO] Listening at: http://0.0.0.0:5000 (6149)
+[2025-08-30 01:56:44 +0000] [6149] [INFO] Using worker: eventlet
+[2025-08-30 01:56:44 +0000] [6170] [INFO] Booting worker with pid: 6170
+[2025-08-30 01:58:36 +0000] [6149] [INFO] Handling signal: int
+[2025-08-30 01:58:37 +0000] [6170] [INFO] Worker exiting (pid: 6170)
+[2025-08-30 01:58:37 +0000] [6149] [INFO] Shutting down: Master
+[2025-08-30 08:55:48 +0000] [7005] [INFO] Starting gunicorn 21.2.0
+[2025-08-30 08:55:48 +0000] [7005] [INFO] Listening at: http://0.0.0.0:5000 (7005)
+[2025-08-30 08:55:48 +0000] [7005] [INFO] Using worker: eventlet
+[2025-08-30 08:55:48 +0000] [7013] [INFO] Booting worker with pid: 7013
+[2025-08-30 08:56:46 +0000] [7005] [INFO] Handling signal: int
+[2025-08-30 08:56:46 +0000] [7013] [INFO] Worker exiting (pid: 7013)
+[2025-08-30 08:56:47 +0000] [7005] [INFO] Shutting down: Master
+[2025-08-30 08:56:52 +0000] [7193] [INFO] Starting gunicorn 21.2.0
+[2025-08-30 08:56:52 +0000] [7193] [INFO] Listening at: http://0.0.0.0:5000 (7193)
+[2025-08-30 08:56:52 +0000] [7193] [INFO] Using worker: eventlet
+[2025-08-30 08:56:52 +0000] [7201] [INFO] Booting worker with pid: 7201
+[2025-08-30 08:57:02 +0000] [7193] [INFO] Handling signal: int
+[2025-08-30 08:57:02 +0000] [7201] [INFO] Worker exiting (pid: 7201)
+[2025-08-30 08:57:03 +0000] [7193] [INFO] Shutting down: Master
+[2025-08-30 08:59:38 +0000] [7763] [INFO] Starting gunicorn 21.2.0
+[2025-08-30 08:59:38 +0000] [7763] [INFO] Listening at: http://0.0.0.0:5000 (7763)
+[2025-08-30 08:59:38 +0000] [7763] [INFO] Using worker: eventlet
+[2025-08-30 08:59:38 +0000] [7771] [INFO] Booting worker with pid: 7771
+[2025-08-30 09:03:42 +0000] [7763] [INFO] Handling signal: int
+[2025-08-30 09:03:43 +0000] [7771] [INFO] Worker exiting (pid: 7771)
+[2025-08-30 09:03:43 +0000] [7763] [INFO] Shutting down: Master
+[2025-08-30 09:03:46 +0000] [8624] [INFO] Starting gunicorn 21.2.0
+[2025-08-30 09:03:46 +0000] [8624] [INFO] Listening at: http://0.0.0.0:5000 (8624)
+[2025-08-30 09:03:46 +0000] [8624] [INFO] Using worker: eventlet
+[2025-08-30 09:03:46 +0000] [8632] [INFO] Booting worker with pid: 8632
+[2025-08-30 09:04:04 +0000] [8624] [INFO] Handling signal: int
+[2025-08-30 09:04:04 +0000] [8632] [INFO] Worker exiting (pid: 8632)
+[2025-08-30 09:04:05 +0000] [8624] [INFO] Shutting down: Master
+[2025-08-30 09:05:19 +0000] [8868] [INFO] Starting gunicorn 21.2.0
+[2025-08-30 09:05:19 +0000] [8868] [INFO] Listening at: http://0.0.0.0:5000 (8868)
+[2025-08-30 09:05:19 +0000] [8868] [INFO] Using worker: eventlet
+[2025-08-30 09:05:19 +0000] [8875] [INFO] Booting worker with pid: 8875
+[2025-08-30 09:06:06 +0000] [8868] [INFO] Handling signal: int
+[2025-08-30 09:06:06 +0000] [8875] [INFO] Worker exiting (pid: 8875)
+[2025-08-30 09:06:07 +0000] [8868] [INFO] Shutting down: Master
+[2025-08-30 09:08:02 +0000] [1226] [INFO] Starting gunicorn 21.2.0
+[2025-08-30 09:08:02 +0000] [1226] [INFO] Listening at: http://0.0.0.0:5000 (1226)
+[2025-08-30 09:08:02 +0000] [1226] [INFO] Using worker: eventlet
+[2025-08-30 09:08:02 +0000] [1227] [INFO] Booting worker with pid: 1227
+[2025-08-30 09:08:55 +0000] [1226] [INFO] Handling signal: int
+[2025-08-30 09:08:56 +0000] [1227] [INFO] Worker exiting (pid: 1227)
+[2025-08-30 09:08:56 +0000] [1226] [INFO] Shutting down: Master
+[2025-08-30 09:09:09 +0000] [1336] [INFO] Starting gunicorn 21.2.0
+[2025-08-30 09:09:09 +0000] [1336] [INFO] Listening at: http://0.0.0.0:5000 (1336)
+[2025-08-30 09:09:09 +0000] [1336] [INFO] Using worker: eventlet
+[2025-08-30 09:09:09 +0000] [1338] [INFO] Booting worker with pid: 1338
+server=binance.gregorbritez.com:5000//socket.io/ client=103.241.67.172:50704 socket shutdown error: [Errno 9] Bad file descriptor[2025-08-30 09:10:53 +0000] [1336] [INFO] Handling signal: int
+[2025-08-30 09:10:54 +0000] [1338] [INFO] Worker exiting (pid: 1338)
+[2025-08-30 09:10:54 +0000] [1336] [INFO] Shutting down: Master
+[2025-08-30 09:10:56 +0000] [1407] [INFO] Starting gunicorn 21.2.0
+[2025-08-30 09:10:56 +0000] [1407] [INFO] Listening at: http://0.0.0.0:5000 (1407)
+[2025-08-30 09:10:56 +0000] [1407] [INFO] Using worker: eventlet
+[2025-08-30 09:10:56 +0000] [1409] [INFO] Booting worker with pid: 1409
+server=binance.gregorbritez.com:5000//socket.io/ client=103.241.67.172:50722 socket shutdown error: [Errno 9] Bad file descriptor[2025-08-30 09:17:48 +0000] [1407] [INFO] Handling signal: int
+[2025-08-30 09:17:49 +0000] [1409] [INFO] Worker exiting (pid: 1409)
+[2025-08-30 09:17:49 +0000] [1407] [INFO] Shutting down: Master
+[2025-08-30 09:21:05 +0000] [2054] [INFO] Starting gunicorn 21.2.0
+[2025-08-30 09:21:05 +0000] [2054] [INFO] Listening at: http://0.0.0.0:5000 (2054)
+[2025-08-30 09:21:05 +0000] [2054] [INFO] Using worker: eventlet
+[2025-08-30 09:21:05 +0000] [2071] [INFO] Booting worker with pid: 2071
+[2025-08-30 09:22:03 +0000] [2054] [INFO] Handling signal: int
+[2025-08-30 09:22:04 +0000] [2071] [INFO] Worker exiting (pid: 2071)
+[2025-08-30 09:22:04 +0000] [2054] [INFO] Shutting down: Master
+[2025-08-30 09:24:52 +0000] [2266] [INFO] Starting gunicorn 21.2.0
+[2025-08-30 09:24:52 +0000] [2266] [INFO] Listening at: http://0.0.0.0:5000 (2266)
+[2025-08-30 09:24:52 +0000] [2266] [INFO] Using worker: eventlet
+[2025-08-30 09:24:52 +0000] [2267] [INFO] Booting worker with pid: 2267
+[2025-08-30 09:25:25 +0000] [2266] [INFO] Handling signal: int
+[2025-08-30 09:25:26 +0000] [2267] [INFO] Worker exiting (pid: 2267)
+[2025-08-30 09:25:26 +0000] [2266] [INFO] Shutting down: Master
+[2025-08-30 09:25:29 +0000] [2280] [INFO] Starting gunicorn 21.2.0
+[2025-08-30 09:25:29 +0000] [2280] [INFO] Listening at: http://0.0.0.0:5000 (2280)
+[2025-08-30 09:25:29 +0000] [2280] [INFO] Using worker: eventlet
+[2025-08-30 09:25:29 +0000] [2282] [INFO] Booting worker with pid: 2282
+[2025-08-30 09:28:15 +0000] [2280] [INFO] Handling signal: int
+[2025-08-30 09:28:16 +0000] [2282] [INFO] Worker exiting (pid: 2282)
+[2025-08-30 09:28:16 +0000] [2280] [INFO] Shutting down: Master
+[2025-08-30 09:42:16 +0000] [2983] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 09:42:16 +0000] [2983] [INFO] Listening at: http://0.0.0.0:5000 (2983)
+[2025-08-30 09:42:16 +0000] [2983] [INFO] Using worker: eventlet
+[2025-08-30 09:42:16 +0000] [2984] [INFO] Booting worker with pid: 2984
+[2025-08-30 09:43:52 +0000] [2983] [INFO] Handling signal: int
+[2025-08-30 09:43:52 +0000] [2984] [INFO] Worker exiting (pid: 2984)
+[2025-08-30 09:43:52 +0000] [2983] [INFO] Shutting down: Master
+[2025-08-30 09:46:42 +0000] [3260] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 09:46:42 +0000] [3260] [INFO] Listening at: http://0.0.0.0:5000 (3260)
+[2025-08-30 09:46:42 +0000] [3260] [INFO] Using worker: eventlet
+[2025-08-30 09:46:42 +0000] [3264] [INFO] Booting worker with pid: 3264
+[2025-08-30 09:47:12 +0000] [3260] [INFO] Handling signal: int
+[2025-08-30 09:47:12,721] ERROR in app: Exception on /api/performance_metrics [GET]
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/binance-python/app.py", line 1431, in get_performance_metrics
+    db.close()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2521, in close
+    self._close_impl(invalidate=False)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2590, in _close_impl
+    transaction.close(invalidate)
+  File "<string>", line 2, in close
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1421, in close
+    connection.close()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1258, in close
+    conn.close()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 1511, in close
+    self._checkin()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 1386, in _checkin
+    _finalize_fairy(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 1034, in _finalize_fairy
+    connection_record.checkin()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 771, in checkin
+    pool._return_conn(self)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 456, in _return_conn
+    self._do_return_conn(record)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 144, in _do_return_conn
+    self._pool.put(record, False)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/util/queue.py", line 164, in put
+    self.not_empty.notify()
+  File "/usr/lib/python3.10/threading.py", line 370, in notify
+    raise RuntimeError("cannot notify on un-acquired lock")
+RuntimeError: cannot notify on un-acquired lock
+[2025-08-30 09:47:37 +0000] [3264] [INFO] Worker exiting (pid: 3264)
+[2025-08-30 09:47:38 +0000] [3260] [INFO] Shutting down: Master
+[2025-08-30 09:47:53 +0000] [3287] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 09:47:53 +0000] [3287] [INFO] Listening at: http://0.0.0.0:5000 (3287)
+[2025-08-30 09:47:53 +0000] [3287] [INFO] Using worker: eventlet
+[2025-08-30 09:47:53 +0000] [3291] [INFO] Booting worker with pid: 3291
+[2025-08-30 09:48:32,121] ERROR in app: Exception on /api/performance_metrics [GET]
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/binance-python/app.py", line 1431, in get_performance_metrics
+    db.close()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2521, in close
+    self._close_impl(invalidate=False)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2590, in _close_impl
+    transaction.close(invalidate)
+  File "<string>", line 2, in close
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1421, in close
+    connection.close()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1258, in close
+    conn.close()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 1511, in close
+    self._checkin()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 1386, in _checkin
+    _finalize_fairy(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 1034, in _finalize_fairy
+    connection_record.checkin()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 771, in checkin
+    pool._return_conn(self)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 456, in _return_conn
+    self._do_return_conn(record)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 144, in _do_return_conn
+    self._pool.put(record, False)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/util/queue.py", line 164, in put
+    self.not_empty.notify()
+  File "/usr/lib/python3.10/threading.py", line 370, in notify
+    raise RuntimeError("cannot notify on un-acquired lock")
+RuntimeError: cannot notify on un-acquired lock
+[2025-08-30 09:49:47,200] ERROR in app: Exception on /api/start [POST]
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/binance-python/app.py", line 1140, in start_bot
+    bot_instance = TradingBot()
+  File "/opt/binance-python/app.py", line 286, in __init__
+    self.api = BinanceFutures()
+  File "/opt/binance-python/app.py", line 165, in __init__
+    self.client = Client(api_key, api_secret, testnet=testnet)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 51, in __init__
+    self.ping()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 344, in ping
+    return self._get("ping", version=self.PRIVATE_API_VERSION)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 180, in _get
+    return self._request_api("get", path, signed, version, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 117, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 88, in _request
+    self.response = getattr(self.session, method)(uri, headers=headers, data=data, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 922, in _ssl_wrap_socket_and_match_hostname
+    context = create_urllib3_context(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 303, in create_urllib3_context
+    context.minimum_version = TLSVersion.TLSv1_2
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  [Previous line repeated 471 more times]
+RecursionError: maximum recursion depth exceeded
+[2025-08-30 09:50:15 +0000] [3287] [INFO] Handling signal: int
+[2025-08-30 09:50:45 +0000] [3287] [ERROR] Worker (pid:3291) was sent SIGKILL! Perhaps out of memory?
+[2025-08-30 09:50:45 +0000] [3287] [INFO] Shutting down: Master
+[2025-08-30 09:50:54 +0000] [3384] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 09:50:54 +0000] [3384] [INFO] Listening at: http://0.0.0.0:5000 (3384)
+[2025-08-30 09:50:54 +0000] [3384] [INFO] Using worker: eventlet
+[2025-08-30 09:50:54 +0000] [3388] [INFO] Booting worker with pid: 3388
+[2025-08-30 09:51:52 +0000] [3384] [INFO] Handling signal: int
+[2025-08-30 09:52:14,431] ERROR in app: Exception on /api/performance_metrics [GET]
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/binance-python/app.py", line 1431, in get_performance_metrics
+    db.close()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2521, in close
+    self._close_impl(invalidate=False)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2590, in _close_impl
+    transaction.close(invalidate)
+  File "<string>", line 2, in close
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1421, in close
+    connection.close()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1258, in close
+    conn.close()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 1511, in close
+    self._checkin()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 1386, in _checkin
+    _finalize_fairy(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 1034, in _finalize_fairy
+    connection_record.checkin()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 771, in checkin
+    pool._return_conn(self)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 456, in _return_conn
+    self._do_return_conn(record)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 144, in _do_return_conn
+    self._pool.put(record, False)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/sqlalchemy/util/queue.py", line 164, in put
+    self.not_empty.notify()
+  File "/usr/lib/python3.10/threading.py", line 370, in notify
+    raise RuntimeError("cannot notify on un-acquired lock")
+RuntimeError: cannot notify on un-acquired lock
+[2025-08-30 09:52:22 +0000] [3384] [ERROR] Worker (pid:3388) was sent SIGKILL! Perhaps out of memory?
+[2025-08-30 09:52:22 +0000] [3384] [INFO] Shutting down: Master
+[2025-08-30 11:52:42 +0000] [2667] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 11:52:42 +0000] [2667] [INFO] Listening at: http://0.0.0.0:5000 (2667)
+[2025-08-30 11:52:42 +0000] [2667] [INFO] Using worker: eventlet
+[2025-08-30 11:52:42 +0000] [2672] [INFO] Booting worker with pid: 2672
+[2025-08-30 11:52:43 +0000] [2672] [ERROR] Error handling request /socket.io/?EIO=4&transport=polling&t=PZwqfkI
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 54, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/opt/binance-python/wsgi.py", line 5, in application
+    return socketio.wsgi_app(environ, start_response)
+AttributeError: 'SocketIO' object has no attribute 'wsgi_app'
+[2025-08-30 11:52:49 +0000] [2672] [ERROR] Error handling request /api/stats
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 54, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/opt/binance-python/wsgi.py", line 5, in application
+    return socketio.wsgi_app(environ, start_response)
+AttributeError: 'SocketIO' object has no attribute 'wsgi_app'
+[2025-08-30 11:52:49 +0000] [2672] [ERROR] Error handling request /socket.io/?EIO=4&transport=polling&t=PZwqhC2
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 54, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/opt/binance-python/wsgi.py", line 5, in application
+    return socketio.wsgi_app(environ, start_response)
+AttributeError: 'SocketIO' object has no attribute 'wsgi_app'
+[2025-08-30 11:52:49 +0000] [2672] [ERROR] Error handling request /
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 54, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/opt/binance-python/wsgi.py", line 5, in application
+    return socketio.wsgi_app(environ, start_response)
+AttributeError: 'SocketIO' object has no attribute 'wsgi_app'
+[2025-08-30 11:52:55 +0000] [2672] [ERROR] Error handling request /socket.io/?EIO=4&transport=polling&t=PZwqifo
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 54, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/opt/binance-python/wsgi.py", line 5, in application
+    return socketio.wsgi_app(environ, start_response)
+AttributeError: 'SocketIO' object has no attribute 'wsgi_app'
+[2025-08-30 11:53:01 +0000] [2672] [ERROR] Error handling request /socket.io/?EIO=4&transport=polling&t=PZwqk7Z
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 54, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/opt/binance-python/wsgi.py", line 5, in application
+    return socketio.wsgi_app(environ, start_response)
+AttributeError: 'SocketIO' object has no attribute 'wsgi_app'
+[2025-08-30 11:53:07 +0000] [2672] [ERROR] Error handling request /socket.io/?EIO=4&transport=polling&t=PZwqlbI
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 54, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/opt/binance-python/wsgi.py", line 5, in application
+    return socketio.wsgi_app(environ, start_response)
+AttributeError: 'SocketIO' object has no attribute 'wsgi_app'
+[2025-08-30 11:53:13 +0000] [2672] [ERROR] Error handling request /socket.io/?EIO=4&transport=polling&t=PZwqn32
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 54, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/opt/binance-python/wsgi.py", line 5, in application
+    return socketio.wsgi_app(environ, start_response)
+AttributeError: 'SocketIO' object has no attribute 'wsgi_app'
+[2025-08-30 11:53:19 +0000] [2672] [ERROR] Error handling request /socket.io/?EIO=4&transport=polling&t=PZwqoWo
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 54, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/opt/binance-python/wsgi.py", line 5, in application
+    return socketio.wsgi_app(environ, start_response)
+AttributeError: 'SocketIO' object has no attribute 'wsgi_app'
+[2025-08-30 11:53:25 +0000] [2672] [ERROR] Error handling request /socket.io/?EIO=4&transport=polling&t=PZwqp-i
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 54, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/opt/binance-python/wsgi.py", line 5, in application
+    return socketio.wsgi_app(environ, start_response)
+AttributeError: 'SocketIO' object has no attribute 'wsgi_app'
+[2025-08-30 11:53:31 +0000] [2672] [ERROR] Error handling request /socket.io/?EIO=4&transport=polling&t=PZwqrSI
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 54, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/opt/binance-python/wsgi.py", line 5, in application
+    return socketio.wsgi_app(environ, start_response)
+AttributeError: 'SocketIO' object has no attribute 'wsgi_app'
+[2025-08-30 11:53:37 +0000] [2672] [ERROR] Error handling request /socket.io/?EIO=4&transport=polling&t=PZwqsw2
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 54, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/opt/binance-python/wsgi.py", line 5, in application
+    return socketio.wsgi_app(environ, start_response)
+AttributeError: 'SocketIO' object has no attribute 'wsgi_app'
+[2025-08-30 11:53:43 +0000] [2672] [ERROR] Error handling request /socket.io/?EIO=4&transport=polling&t=PZwquNo
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 54, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/opt/binance-python/wsgi.py", line 5, in application
+    return socketio.wsgi_app(environ, start_response)
+AttributeError: 'SocketIO' object has no attribute 'wsgi_app'
+[2025-08-30 11:53:49 +0000] [2672] [ERROR] Error handling request /api/stats
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 54, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/opt/binance-python/wsgi.py", line 5, in application
+    return socketio.wsgi_app(environ, start_response)
+AttributeError: 'SocketIO' object has no attribute 'wsgi_app'
+[2025-08-30 11:53:49 +0000] [2672] [ERROR] Error handling request /socket.io/?EIO=4&transport=polling&t=PZwqvrY
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 54, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/opt/binance-python/wsgi.py", line 5, in application
+    return socketio.wsgi_app(environ, start_response)
+AttributeError: 'SocketIO' object has no attribute 'wsgi_app'
+[2025-08-30 11:53:55 +0000] [2672] [ERROR] Error handling request /socket.io/?EIO=4&transport=polling&t=PZwqxJI
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 54, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/opt/binance-python/wsgi.py", line 5, in application
+    return socketio.wsgi_app(environ, start_response)
+AttributeError: 'SocketIO' object has no attribute 'wsgi_app'
+[2025-08-30 11:54:01 +0000] [2672] [ERROR] Error handling request /socket.io/?EIO=4&transport=polling&t=PZwqyn2
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 54, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/opt/binance-python/wsgi.py", line 5, in application
+    return socketio.wsgi_app(environ, start_response)
+AttributeError: 'SocketIO' object has no attribute 'wsgi_app'
+[2025-08-30 11:54:07 +0000] [2672] [ERROR] Error handling request /socket.io/?EIO=4&transport=polling&t=PZwq-Eo
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 54, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/opt/binance-python/wsgi.py", line 5, in application
+    return socketio.wsgi_app(environ, start_response)
+AttributeError: 'SocketIO' object has no attribute 'wsgi_app'
+[2025-08-30 11:54:13 +0000] [2672] [ERROR] Error handling request /socket.io/?EIO=4&transport=polling&t=PZwq_iZ
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 54, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/opt/binance-python/wsgi.py", line 5, in application
+    return socketio.wsgi_app(environ, start_response)
+AttributeError: 'SocketIO' object has no attribute 'wsgi_app'
+[2025-08-30 11:54:19 +0000] [2672] [ERROR] Error handling request /socket.io/?EIO=4&transport=polling&t=PZwr1AL
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 54, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/opt/binance-python/wsgi.py", line 5, in application
+    return socketio.wsgi_app(environ, start_response)
+AttributeError: 'SocketIO' object has no attribute 'wsgi_app'
+[2025-08-30 11:54:25 +0000] [2672] [ERROR] Error handling request /socket.io/?EIO=4&transport=polling&t=PZwr2e2
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 54, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/opt/binance-python/wsgi.py", line 5, in application
+    return socketio.wsgi_app(environ, start_response)
+AttributeError: 'SocketIO' object has no attribute 'wsgi_app'
+[2025-08-30 11:54:31 +0000] [2672] [ERROR] Error handling request /socket.io/?EIO=4&transport=polling&t=PZwr45o
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 54, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/opt/binance-python/wsgi.py", line 5, in application
+    return socketio.wsgi_app(environ, start_response)
+AttributeError: 'SocketIO' object has no attribute 'wsgi_app'
+[2025-08-30 11:54:37 +0000] [2672] [ERROR] Error handling request /socket.io/?EIO=4&transport=polling&t=PZwr5ZY
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 54, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/opt/binance-python/wsgi.py", line 5, in application
+    return socketio.wsgi_app(environ, start_response)
+AttributeError: 'SocketIO' object has no attribute 'wsgi_app'
+[2025-08-30 11:54:39 +0000] [2667] [INFO] Handling signal: int
+[2025-08-30 11:54:40 +0000] [2672] [INFO] Worker exiting (pid: 2672)
+[2025-08-30 11:54:40 +0000] [2667] [INFO] Shutting down: Master
+[2025-08-30 12:55:32 +0000] [13982] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 12:55:32 +0000] [13982] [INFO] Listening at: http://0.0.0.0:5000 (13982)
+[2025-08-30 12:55:32 +0000] [13982] [INFO] Using worker: eventlet
+[2025-08-30 12:55:32 +0000] [13990] [INFO] Booting worker with pid: 13990
+[2025-08-30 12:56:06 +0000] [13982] [INFO] Handling signal: int
+[2025-08-30 12:56:36 +0000] [13982] [ERROR] Worker (pid:13990) was sent SIGKILL! Perhaps out of memory?
+[2025-08-30 12:56:37 +0000] [13982] [INFO] Shutting down: Master
+[2025-08-30 13:00:50 +0000] [15052] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 13:00:50 +0000] [15052] [INFO] Listening at: http://0.0.0.0:5000 (15052)
+[2025-08-30 13:00:50 +0000] [15052] [INFO] Using worker: eventlet
+[2025-08-30 13:00:50 +0000] [15059] [INFO] Booting worker with pid: 15059
+[2025-08-30 13:00:50 +0000] [15060] [INFO] Booting worker with pid: 15060
+[2025-08-30 13:00:50 +0000] [15061] [INFO] Booting worker with pid: 15061
+[2025-08-30 13:01:05 +0000] [15052] [INFO] Handling signal: term
+[2025-08-30 13:01:06 +0000] [15061] [INFO] Worker exiting (pid: 15061)
+[2025-08-30 13:01:16 +0000] [15060] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 13:01:22 +0000] [15059] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 13:01:22 +0000] [15059] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 13:01:22 +0000] [15059] [INFO] Worker exiting (pid: 15059)
+[2025-08-30 13:01:35 +0000] [15052] [INFO] Shutting down: Master
+[2025-08-30 13:01:53 +0000] [667] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 13:01:53 +0000] [667] [INFO] Listening at: http://0.0.0.0:5000 (667)
+[2025-08-30 13:01:53 +0000] [667] [INFO] Using worker: eventlet
+[2025-08-30 13:01:53 +0000] [827] [INFO] Booting worker with pid: 827
+[2025-08-30 13:01:54 +0000] [828] [INFO] Booting worker with pid: 828
+[2025-08-30 13:01:54 +0000] [829] [INFO] Booting worker with pid: 829
+[2025-08-30 13:02:05,006] ERROR in app: Exception on /api/start [POST]
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/binance-python/app.py", line 1140, in start_bot
+    bot_instance = TradingBot()
+  File "/opt/binance-python/app.py", line 286, in __init__
+    self.api = BinanceFutures()
+  File "/opt/binance-python/app.py", line 165, in __init__
+    self.client = Client(api_key, api_secret, testnet=testnet)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 51, in __init__
+    self.ping()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 344, in ping
+    return self._get("ping", version=self.PRIVATE_API_VERSION)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 180, in _get
+    return self._request_api("get", path, signed, version, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 117, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 88, in _request
+    self.response = getattr(self.session, method)(uri, headers=headers, data=data, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 922, in _ssl_wrap_socket_and_match_hostname
+    context = create_urllib3_context(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 303, in create_urllib3_context
+    context.minimum_version = TLSVersion.TLSv1_2
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  [Previous line repeated 471 more times]
+RecursionError: maximum recursion depth exceeded
+[2025-08-30 13:02:46,364] ERROR in app: Exception on /api/start [POST]
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/binance-python/app.py", line 1140, in start_bot
+    bot_instance = TradingBot()
+  File "/opt/binance-python/app.py", line 286, in __init__
+    self.api = BinanceFutures()
+  File "/opt/binance-python/app.py", line 165, in __init__
+    self.client = Client(api_key, api_secret, testnet=testnet)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 51, in __init__
+    self.ping()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 344, in ping
+    return self._get("ping", version=self.PRIVATE_API_VERSION)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 180, in _get
+    return self._request_api("get", path, signed, version, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 117, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 88, in _request
+    self.response = getattr(self.session, method)(uri, headers=headers, data=data, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 922, in _ssl_wrap_socket_and_match_hostname
+    context = create_urllib3_context(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 303, in create_urllib3_context
+    context.minimum_version = TLSVersion.TLSv1_2
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  [Previous line repeated 471 more times]
+RecursionError: maximum recursion depth exceeded
+[2025-08-30 13:06:30 +0000] [667] [INFO] Handling signal: term
+[2025-08-30 13:06:47 +0000] [828] [INFO] Worker exiting (pid: 828)
+[2025-08-30 13:06:53 +0000] [827] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 13:07:00 +0000] [667] [ERROR] Worker (pid:829) was sent SIGKILL! Perhaps out of memory?
+[2025-08-30 13:07:00 +0000] [667] [INFO] Shutting down: Master
+[2025-08-30 13:08:11 +0000] [2350] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 13:08:11 +0000] [2350] [INFO] Listening at: http://0.0.0.0:5000 (2350)
+[2025-08-30 13:08:11 +0000] [2350] [INFO] Using worker: eventlet
+[2025-08-30 13:08:11 +0000] [2358] [INFO] Booting worker with pid: 2358
+[2025-08-30 13:09:26 +0000] [2350] [INFO] Handling signal: int
+[2025-08-30 13:09:57 +0000] [2350] [ERROR] Worker (pid:2358) was sent SIGKILL! Perhaps out of memory?
+[2025-08-30 13:09:57 +0000] [2350] [INFO] Shutting down: Master
+[2025-08-30 13:10:48 +0000] [1156] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 13:10:48 +0000] [1156] [INFO] Listening at: http://0.0.0.0:5000 (1156)
+[2025-08-30 13:10:48 +0000] [1156] [INFO] Using worker: eventlet
+[2025-08-30 13:10:48 +0000] [1335] [INFO] Booting worker with pid: 1335
+[2025-08-30 13:11:45 +0000] [1156] [INFO] Handling signal: int
+[2025-08-30 13:12:15 +0000] [1156] [ERROR] Worker (pid:1335) was sent SIGKILL! Perhaps out of memory?
+[2025-08-30 13:12:15 +0000] [1156] [INFO] Shutting down: Master
+[2025-08-30 13:13:09 +0000] [1696] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 13:13:09 +0000] [1696] [INFO] Listening at: http://0.0.0.0:5000 (1696)
+[2025-08-30 13:13:09 +0000] [1696] [INFO] Using worker: eventlet
+[2025-08-30 13:13:09 +0000] [1704] [INFO] Booting worker with pid: 1704
+[2025-08-30 13:15:13 +0000] [1696] [INFO] Handling signal: int
+[2025-08-30 13:15:43 +0000] [1696] [ERROR] Worker (pid:1704) was sent SIGKILL! Perhaps out of memory?
+[2025-08-30 13:15:43 +0000] [1696] [INFO] Shutting down: Master
+[2025-08-30 13:20:10 +0000] [3011] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 13:20:10 +0000] [3011] [INFO] Listening at: http://0.0.0.0:5000 (3011)
+[2025-08-30 13:20:10 +0000] [3011] [INFO] Using worker: eventlet
+[2025-08-30 13:20:10 +0000] [3019] [INFO] Booting worker with pid: 3019
+[2025-08-30 13:21:43 +0000] [3011] [ERROR] Unhandled exception in main loop
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 208, in run
+    self.sleep()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 359, in sleep
+    ready = select.select([self.PIPE[0]], [], [], 1.0)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/green/select.py", line 80, in select
+    return hub.switch()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/hub.py", line 310, in switch
+    return self.greenlet.switch()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/hub.py", line 362, in run
+    self.wait(sleep_time)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/poll.py", line 80, in wait
+    presult = self.do_poll(seconds)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/epolls.py", line 31, in do_poll
+    return self.poll.poll(seconds)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 193, in signal
+    self.wakeup()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 334, in wakeup
+    os.write(self.PIPE[1], b'.')
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/green/os.py", line 74, in write
+    hubs.trampoline(fd, write=True)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/__init__.py", line 139, in trampoline
+    raise RuntimeError('do not call blocking functions from the mainloop')
+RuntimeError: do not call blocking functions from the mainloop
+[2025-08-30 13:21:43 +0000] [3019] [INFO] Worker exiting (pid: 3019)
+[2025-08-30 13:22:26 +0000] [3383] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 13:22:26 +0000] [3383] [INFO] Listening at: http://0.0.0.0:5000 (3383)
+[2025-08-30 13:22:26 +0000] [3383] [INFO] Using worker: eventlet
+[2025-08-30 13:22:26 +0000] [3391] [INFO] Booting worker with pid: 3391
+[2025-08-30 13:24:59 +0000] [3383] [ERROR] Unhandled exception in main loop
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 208, in run
+    self.sleep()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 359, in sleep
+    ready = select.select([self.PIPE[0]], [], [], 1.0)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/green/select.py", line 80, in select
+    return hub.switch()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/hub.py", line 310, in switch
+    return self.greenlet.switch()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/hub.py", line 362, in run
+    self.wait(sleep_time)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/poll.py", line 80, in wait
+    presult = self.do_poll(seconds)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/epolls.py", line 31, in do_poll
+    return self.poll.poll(seconds)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 193, in signal
+    self.wakeup()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 334, in wakeup
+    os.write(self.PIPE[1], b'.')
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/green/os.py", line 74, in write
+    hubs.trampoline(fd, write=True)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/__init__.py", line 139, in trampoline
+    raise RuntimeError('do not call blocking functions from the mainloop')
+RuntimeError: do not call blocking functions from the mainloop
+[2025-08-30 13:24:59 +0000] [3391] [INFO] Worker exiting (pid: 3391)
+[2025-08-30 13:25:12 +0000] [3809] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 13:25:12 +0000] [3809] [INFO] Listening at: http://0.0.0.0:5000 (3809)
+[2025-08-30 13:25:12 +0000] [3809] [INFO] Using worker: eventlet
+[2025-08-30 13:25:12 +0000] [3817] [INFO] Booting worker with pid: 3817
+server=binance.gregorbritez.com:5000//socket.io/ client=103.241.67.172:53329 socket shutdown error: [Errno 9] Bad file descriptor[2025-08-30 13:26:32 +0000] [3809] [ERROR] Unhandled exception in main loop
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 208, in run
+    self.sleep()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 359, in sleep
+    ready = select.select([self.PIPE[0]], [], [], 1.0)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/green/select.py", line 80, in select
+    return hub.switch()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/hub.py", line 310, in switch
+    return self.greenlet.switch()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/hub.py", line 362, in run
+    self.wait(sleep_time)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/poll.py", line 80, in wait
+    presult = self.do_poll(seconds)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/epolls.py", line 31, in do_poll
+    return self.poll.poll(seconds)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 193, in signal
+    self.wakeup()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 334, in wakeup
+    os.write(self.PIPE[1], b'.')
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/green/os.py", line 74, in write
+    hubs.trampoline(fd, write=True)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/__init__.py", line 139, in trampoline
+    raise RuntimeError('do not call blocking functions from the mainloop')
+RuntimeError: do not call blocking functions from the mainloop
+[2025-08-30 13:26:33 +0000] [3817] [INFO] Worker exiting (pid: 3817)
+[2025-08-30 13:27:58 +0000] [4463] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 13:27:58 +0000] [4463] [INFO] Listening at: http://0.0.0.0:5000 (4463)
+[2025-08-30 13:27:58 +0000] [4463] [INFO] Using worker: eventlet
+[2025-08-30 13:27:58 +0000] [4470] [INFO] Booting worker with pid: 4470
+server=binance.gregorbritez.com:5000//socket.io/ client=103.241.67.172:53358 socket shutdown error: [Errno 9] Bad file descriptor[2025-08-30 13:37:56 +0000] [4463] [ERROR] Unhandled exception in main loop
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 208, in run
+    self.sleep()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 359, in sleep
+    ready = select.select([self.PIPE[0]], [], [], 1.0)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/green/select.py", line 80, in select
+    return hub.switch()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/hub.py", line 310, in switch
+    return self.greenlet.switch()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/hub.py", line 362, in run
+    self.wait(sleep_time)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/poll.py", line 80, in wait
+    presult = self.do_poll(seconds)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/epolls.py", line 31, in do_poll
+    return self.poll.poll(seconds)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 193, in signal
+    self.wakeup()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 334, in wakeup
+    os.write(self.PIPE[1], b'.')
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/green/os.py", line 74, in write
+    hubs.trampoline(fd, write=True)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/__init__.py", line 139, in trampoline
+    raise RuntimeError('do not call blocking functions from the mainloop')
+RuntimeError: do not call blocking functions from the mainloop
+[2025-08-30 13:37:56 +0000] [4470] [INFO] Worker exiting (pid: 4470)
+[2025-08-30 13:37:58 +0000] [6493] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 13:37:58 +0000] [6493] [INFO] Listening at: http://0.0.0.0:5000 (6493)
+[2025-08-30 13:37:58 +0000] [6493] [INFO] Using worker: eventlet
+[2025-08-30 13:37:58 +0000] [6499] [INFO] Booting worker with pid: 6499
+[2025-08-30 13:39:16 +0000] [6493] [INFO] Handling signal: term
+[2025-08-30 13:39:38 +0000] [6499] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 13:39:38 +0000] [6499] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 13:39:38 +0000] [6499] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 13:39:38 +0000] [6499] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 13:39:38 +0000] [6499] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 13:39:38 +0000] [6499] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 13:39:38 +0000] [6499] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 13:39:46 +0000] [6493] [INFO] Shutting down: Master
+[2025-08-30 13:40:04 +0000] [671] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 13:40:04 +0000] [671] [INFO] Listening at: http://0.0.0.0:5000 (671)
+[2025-08-30 13:40:04 +0000] [671] [INFO] Using worker: eventlet
+[2025-08-30 13:40:04 +0000] [868] [INFO] Booting worker with pid: 868
+[2025-08-30 13:43:00,975] ERROR in app: Exception on /api/start [POST]
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/binance-python/app.py", line 628, in start_bot
+    bot_instance = TradingBot()
+  File "/opt/binance-python/app.py", line 266, in __init__
+    self.api = BinanceFutures()
+  File "/opt/binance-python/app.py", line 163, in __init__
+    self.client = Client(api_key, api_secret, testnet=testnet)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 51, in __init__
+    self.ping()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 344, in ping
+    return self._get("ping", version=self.PRIVATE_API_VERSION)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 180, in _get
+    return self._request_api("get", path, signed, version, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 117, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 88, in _request
+    self.response = getattr(self.session, method)(uri, headers=headers, data=data, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 922, in _ssl_wrap_socket_and_match_hostname
+    context = create_urllib3_context(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 303, in create_urllib3_context
+    context.minimum_version = TLSVersion.TLSv1_2
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  [Previous line repeated 471 more times]
+RecursionError: maximum recursion depth exceeded
+[2025-08-30 13:43:07 +0000] [671] [INFO] Handling signal: term
+[2025-08-30 13:43:37 +0000] [671] [INFO] Shutting down: Master
+[2025-08-30 13:43:38 +0000] [1721] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 13:43:38 +0000] [1721] [INFO] Listening at: http://0.0.0.0:5000 (1721)
+[2025-08-30 13:43:38 +0000] [1721] [INFO] Using worker: eventlet
+[2025-08-30 13:43:38 +0000] [1727] [INFO] Booting worker with pid: 1727
+[2025-08-30 13:43:39 +0000] [1728] [INFO] Booting worker with pid: 1728
+[2025-08-30 13:43:39 +0000] [1729] [INFO] Booting worker with pid: 1729
+[2025-08-30 13:43:46,238] ERROR in app: Exception on /api/start [POST]
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/binance-python/app.py", line 628, in start_bot
+    bot_instance = TradingBot()
+  File "/opt/binance-python/app.py", line 266, in __init__
+    self.api = BinanceFutures()
+  File "/opt/binance-python/app.py", line 163, in __init__
+    self.client = Client(api_key, api_secret, testnet=testnet)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 51, in __init__
+    self.ping()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 344, in ping
+    return self._get("ping", version=self.PRIVATE_API_VERSION)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 180, in _get
+    return self._request_api("get", path, signed, version, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 117, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 88, in _request
+    self.response = getattr(self.session, method)(uri, headers=headers, data=data, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 922, in _ssl_wrap_socket_and_match_hostname
+    context = create_urllib3_context(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 303, in create_urllib3_context
+    context.minimum_version = TLSVersion.TLSv1_2
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  [Previous line repeated 471 more times]
+RecursionError: maximum recursion depth exceeded
+[2025-08-30 13:44:57 +0000] [1721] [INFO] Handling signal: term
+[2025-08-30 13:44:58 +0000] [1727] [INFO] Worker exiting (pid: 1727)
+[2025-08-30 13:45:04 +0000] [1728] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 13:45:04 +0000] [1728] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 13:45:06 +0000] [1729] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 13:45:06 +0000] [1729] [INFO] Worker exiting (pid: 1729)
+[2025-08-30 13:45:27 +0000] [1721] [INFO] Shutting down: Master
+[2025-08-30 13:45:29 +0000] [2181] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 13:45:29 +0000] [2181] [INFO] Listening at: http://0.0.0.0:5000 (2181)
+[2025-08-30 13:45:29 +0000] [2181] [INFO] Using worker: eventlet
+[2025-08-30 13:45:29 +0000] [2193] [INFO] Booting worker with pid: 2193
+[2025-08-30 13:47:47 +0000] [2181] [CRITICAL] WORKER TIMEOUT (pid:2193)
+[2025-08-30 13:48:12 +0000] [2193] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 13:48:12 +0000] [2193] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 13:48:12 +0000] [2193] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 13:48:12,579] ERROR in app: Exception on /api/start [POST]
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/binance-python/app.py", line 628, in start_bot
+    bot_instance = TradingBot()
+  File "/opt/binance-python/app.py", line 266, in __init__
+    self.api = BinanceFutures()
+  File "/opt/binance-python/app.py", line 163, in __init__
+    self.client = Client(api_key, api_secret, testnet=testnet)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 51, in __init__
+    self.ping()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 344, in ping
+    return self._get("ping", version=self.PRIVATE_API_VERSION)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 180, in _get
+    return self._request_api("get", path, signed, version, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 117, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 88, in _request
+    self.response = getattr(self.session, method)(uri, headers=headers, data=data, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 922, in _ssl_wrap_socket_and_match_hostname
+    context = create_urllib3_context(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 303, in create_urllib3_context
+    context.minimum_version = TLSVersion.TLSv1_2
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  [Previous line repeated 471 more times]
+RecursionError: maximum recursion depth exceeded
+[2025-08-30 13:48:37 +0000] [2193] [INFO] Worker exiting (pid: 2193)
+[2025-08-30 13:48:37 +0000] [3092] [INFO] Booting worker with pid: 3092
+[2025-08-30 13:50:03 +0000] [2181] [CRITICAL] WORKER TIMEOUT (pid:3092)
+[2025-08-30 13:50:03 +0000] [3092] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 13:50:03 +0000] [3092] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 13:50:03 +0000] [3092] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 13:50:03 +0000] [3092] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 13:51:04 +0000] [2181] [ERROR] Worker (pid:3092) was sent SIGKILL! Perhaps out of memory?
+[2025-08-30 13:51:04 +0000] [3445] [INFO] Booting worker with pid: 3445
+[2025-08-30 13:52:19,570] ERROR in app: Exception on /api/start [POST]
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/binance-python/app.py", line 628, in start_bot
+    bot_instance = TradingBot()
+  File "/opt/binance-python/app.py", line 266, in __init__
+    self.api = BinanceFutures()
+  File "/opt/binance-python/app.py", line 163, in __init__
+    self.client = Client(api_key, api_secret, testnet=testnet)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 51, in __init__
+    self.ping()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 344, in ping
+    return self._get("ping", version=self.PRIVATE_API_VERSION)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 180, in _get
+    return self._request_api("get", path, signed, version, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 117, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 88, in _request
+    self.response = getattr(self.session, method)(uri, headers=headers, data=data, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 922, in _ssl_wrap_socket_and_match_hostname
+    context = create_urllib3_context(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 303, in create_urllib3_context
+    context.minimum_version = TLSVersion.TLSv1_2
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  [Previous line repeated 471 more times]
+RecursionError: maximum recursion depth exceeded
+[2025-08-30 13:52:55 +0000] [2181] [CRITICAL] WORKER TIMEOUT (pid:3445)
+[2025-08-30 13:53:55 +0000] [2181] [ERROR] Worker (pid:3445) was sent SIGKILL! Perhaps out of memory?
+[2025-08-30 13:53:55 +0000] [4137] [INFO] Booting worker with pid: 4137
+[2025-08-30 13:55:03 +0000] [2181] [INFO] Handling signal: term
+[2025-08-30 13:55:33 +0000] [2181] [INFO] Shutting down: Master
+[2025-08-30 13:55:35 +0000] [4469] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 13:55:35 +0000] [4469] [INFO] Listening at: http://0.0.0.0:5000 (4469)
+[2025-08-30 13:55:35 +0000] [4469] [INFO] Using worker: eventlet
+[2025-08-30 13:55:35 +0000] [4478] [INFO] Booting worker with pid: 4478
+[2025-08-30 13:57:01 +0000] [4469] [CRITICAL] WORKER TIMEOUT (pid:4478)
+[2025-08-30 13:57:01 +0000] [4478] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 13:57:09 +0000] [4469] [INFO] Handling signal: term
+[2025-08-30 13:57:39 +0000] [4469] [INFO] Shutting down: Master
+[2025-08-30 13:58:07 +0000] [5112] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 13:58:07 +0000] [5112] [INFO] Listening at: http://0.0.0.0:5000 (5112)
+[2025-08-30 13:58:07 +0000] [5112] [INFO] Using worker: eventlet
+[2025-08-30 13:58:07 +0000] [5120] [INFO] Booting worker with pid: 5120
+[2025-08-30 13:59:18 +0000] [5112] [INFO] Handling signal: term
+[2025-08-30 13:59:48 +0000] [5112] [INFO] Shutting down: Master
+[2025-08-30 13:59:50 +0000] [5490] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 13:59:50 +0000] [5490] [INFO] Listening at: http://0.0.0.0:5000 (5490)
+[2025-08-30 13:59:50 +0000] [5490] [INFO] Using worker: eventlet
+[2025-08-30 13:59:50 +0000] [5498] [INFO] Booting worker with pid: 5498
+[2025-08-30 13:59:50 +0000] [5499] [INFO] Booting worker with pid: 5499
+[2025-08-30 13:59:50 +0000] [5502] [INFO] Booting worker with pid: 5502
+[2025-08-30 14:01:06,949] ERROR in app: Exception on /api/start [POST]
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/binance-python/app.py", line 628, in start_bot
+    bot_instance = TradingBot()
+  File "/opt/binance-python/app.py", line 266, in __init__
+    self.api = BinanceFutures()
+  File "/opt/binance-python/app.py", line 163, in __init__
+    self.client = Client(api_key, api_secret, testnet=testnet)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 51, in __init__
+    self.ping()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 344, in ping
+    return self._get("ping", version=self.PRIVATE_API_VERSION)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 180, in _get
+    return self._request_api("get", path, signed, version, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 117, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 88, in _request
+    self.response = getattr(self.session, method)(uri, headers=headers, data=data, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 922, in _ssl_wrap_socket_and_match_hostname
+    context = create_urllib3_context(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 303, in create_urllib3_context
+    context.minimum_version = TLSVersion.TLSv1_2
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  [Previous line repeated 471 more times]
+RecursionError: maximum recursion depth exceeded
+[2025-08-30 14:01:11 +0000] [5490] [INFO] Handling signal: term
+[2025-08-30 14:01:11 +0000] [5499] [INFO] Worker exiting (pid: 5499)
+[2025-08-30 14:01:12 +0000] [5502] [INFO] Worker exiting (pid: 5502)
+[2025-08-30 14:01:38 +0000] [5498] [INFO] Worker exiting (pid: 5498)
+[2025-08-30 14:01:38 +0000] [5490] [INFO] Shutting down: Master
+[2025-08-30 14:01:58 +0000] [808] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 14:01:58 +0000] [808] [INFO] Listening at: http://0.0.0.0:5000 (808)
+[2025-08-30 14:01:58 +0000] [808] [INFO] Using worker: eventlet
+[2025-08-30 14:01:58 +0000] [895] [INFO] Booting worker with pid: 895
+[2025-08-30 14:01:58 +0000] [900] [INFO] Booting worker with pid: 900
+[2025-08-30 14:01:58 +0000] [901] [INFO] Booting worker with pid: 901
+[2025-08-30 14:02:03,625] ERROR in app: Exception on /api/start [POST]
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/binance-python/app.py", line 628, in start_bot
+    bot_instance = TradingBot()
+  File "/opt/binance-python/app.py", line 266, in __init__
+    self.api = BinanceFutures()
+  File "/opt/binance-python/app.py", line 163, in __init__
+    self.client = Client(api_key, api_secret, testnet=testnet)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 51, in __init__
+    self.ping()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 344, in ping
+    return self._get("ping", version=self.PRIVATE_API_VERSION)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 180, in _get
+    return self._request_api("get", path, signed, version, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 117, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 88, in _request
+    self.response = getattr(self.session, method)(uri, headers=headers, data=data, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 922, in _ssl_wrap_socket_and_match_hostname
+    context = create_urllib3_context(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 303, in create_urllib3_context
+    context.minimum_version = TLSVersion.TLSv1_2
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  [Previous line repeated 471 more times]
+RecursionError: maximum recursion depth exceeded
+[2025-08-30 14:03:21,009] ERROR in app: Exception on /api/start [POST]
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/binance-python/app.py", line 628, in start_bot
+    bot_instance = TradingBot()
+  File "/opt/binance-python/app.py", line 266, in __init__
+    self.api = BinanceFutures()
+  File "/opt/binance-python/app.py", line 163, in __init__
+    self.client = Client(api_key, api_secret, testnet=testnet)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 51, in __init__
+    self.ping()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 344, in ping
+    return self._get("ping", version=self.PRIVATE_API_VERSION)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 180, in _get
+    return self._request_api("get", path, signed, version, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 117, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 88, in _request
+    self.response = getattr(self.session, method)(uri, headers=headers, data=data, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 922, in _ssl_wrap_socket_and_match_hostname
+    context = create_urllib3_context(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 303, in create_urllib3_context
+    context.minimum_version = TLSVersion.TLSv1_2
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  [Previous line repeated 471 more times]
+RecursionError: maximum recursion depth exceeded
+[2025-08-30 14:03:58 +0000] [808] [INFO] Handling signal: term
+[2025-08-30 14:04:11 +0000] [900] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 14:04:11 +0000] [900] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 14:04:11 +0000] [900] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 14:04:11 +0000] [900] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 14:04:11 +0000] [900] [INFO] Worker exiting (pid: 900)
+[2025-08-30 14:04:21 +0000] [901] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 14:04:21 +0000] [901] [INFO] Worker exiting (pid: 901)
+[2025-08-30 14:04:28 +0000] [895] [INFO] Worker exiting (pid: 895)
+[2025-08-30 14:04:28 +0000] [808] [INFO] Shutting down: Master
+[2025-08-30 14:05:47 +0000] [1807] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 14:05:47 +0000] [1807] [INFO] Listening at: http://0.0.0.0:5000 (1807)
+[2025-08-30 14:05:47 +0000] [1807] [INFO] Using worker: eventlet
+[2025-08-30 14:05:47 +0000] [1815] [INFO] Booting worker with pid: 1815
+[2025-08-30 14:05:47 +0000] [1816] [INFO] Booting worker with pid: 1816
+[2025-08-30 14:05:47 +0000] [1817] [INFO] Booting worker with pid: 1817
+[2025-08-30 14:06:08 +0000] [1807] [INFO] Handling signal: int
+[2025-08-30 14:06:13,894] ERROR in app: Exception on /api/start [POST]
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/binance-python/app.py", line 628, in start_bot
+    bot_instance = TradingBot()
+  File "/opt/binance-python/app.py", line 266, in __init__
+    self.api = BinanceFutures()
+  File "/opt/binance-python/app.py", line 163, in __init__
+    self.client = Client(api_key, api_secret, testnet=testnet)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 51, in __init__
+    self.ping()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 344, in ping
+    return self._get("ping", version=self.PRIVATE_API_VERSION)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 180, in _get
+    return self._request_api("get", path, signed, version, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 117, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 88, in _request
+    self.response = getattr(self.session, method)(uri, headers=headers, data=data, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 922, in _ssl_wrap_socket_and_match_hostname
+    context = create_urllib3_context(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 303, in create_urllib3_context
+    context.minimum_version = TLSVersion.TLSv1_2
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  [Previous line repeated 471 more times]
+RecursionError: maximum recursion depth exceeded
+[2025-08-30 14:06:13 +0000] [1817] [INFO] Worker exiting (pid: 1817)
+[2025-08-30 14:06:19 +0000] [1816] [INFO] Worker exiting (pid: 1816)
+[2025-08-30 14:06:38 +0000] [1807] [ERROR] Worker (pid:1815) was sent SIGKILL! Perhaps out of memory?
+[2025-08-30 14:06:38 +0000] [1807] [INFO] Shutting down: Master
+[2025-08-30 14:07:47 +0000] [2452] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 14:07:47 +0000] [2452] [INFO] Listening at: http://0.0.0.0:5000 (2452)
+[2025-08-30 14:07:47 +0000] [2452] [INFO] Using worker: eventlet
+[2025-08-30 14:07:47 +0000] [2459] [INFO] Booting worker with pid: 2459
+[2025-08-30 14:07:47 +0000] [2460] [INFO] Booting worker with pid: 2460
+[2025-08-30 14:07:47 +0000] [2461] [INFO] Booting worker with pid: 2461
+[2025-08-30 14:08:12,974] ERROR in app: Exception on /api/start [POST]
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/binance-python/app.py", line 628, in start_bot
+    bot_instance = TradingBot()
+  File "/opt/binance-python/app.py", line 266, in __init__
+    self.api = BinanceFutures()
+  File "/opt/binance-python/app.py", line 163, in __init__
+    self.client = Client(api_key, api_secret, testnet=testnet)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 51, in __init__
+    self.ping()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 344, in ping
+    return self._get("ping", version=self.PRIVATE_API_VERSION)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 180, in _get
+    return self._request_api("get", path, signed, version, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 117, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 88, in _request
+    self.response = getattr(self.session, method)(uri, headers=headers, data=data, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 922, in _ssl_wrap_socket_and_match_hostname
+    context = create_urllib3_context(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 303, in create_urllib3_context
+    context.minimum_version = TLSVersion.TLSv1_2
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  [Previous line repeated 471 more times]
+RecursionError: maximum recursion depth exceeded
+[2025-08-30 14:08:54,736] ERROR in app: Exception on /api/start [POST]
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/binance-python/app.py", line 628, in start_bot
+    bot_instance = TradingBot()
+  File "/opt/binance-python/app.py", line 266, in __init__
+    self.api = BinanceFutures()
+  File "/opt/binance-python/app.py", line 163, in __init__
+    self.client = Client(api_key, api_secret, testnet=testnet)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 51, in __init__
+    self.ping()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 344, in ping
+    return self._get("ping", version=self.PRIVATE_API_VERSION)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 180, in _get
+    return self._request_api("get", path, signed, version, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 117, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 88, in _request
+    self.response = getattr(self.session, method)(uri, headers=headers, data=data, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 922, in _ssl_wrap_socket_and_match_hostname
+    context = create_urllib3_context(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 303, in create_urllib3_context
+    context.minimum_version = TLSVersion.TLSv1_2
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  [Previous line repeated 471 more times]
+RecursionError: maximum recursion depth exceeded
+[2025-08-30 14:08:57 +0000] [2452] [INFO] Handling signal: int
+[2025-08-30 14:08:57 +0000] [2459] [INFO] Worker exiting (pid: 2459)
+[2025-08-30 14:08:57 +0000] [2460] [INFO] Worker exiting (pid: 2460)
+[2025-08-30 14:09:27 +0000] [2452] [ERROR] Worker (pid:2461) was sent SIGKILL! Perhaps out of memory?
+[2025-08-30 14:09:27 +0000] [2452] [INFO] Shutting down: Master
+[2025-08-30 14:12:37 +0000] [3458] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 14:12:37 +0000] [3458] [INFO] Listening at: http://0.0.0.0:5000 (3458)
+[2025-08-30 14:12:37 +0000] [3458] [INFO] Using worker: eventlet
+[2025-08-30 14:12:37 +0000] [3472] [INFO] Booting worker with pid: 3472
+[2025-08-30 14:12:37 +0000] [3473] [INFO] Booting worker with pid: 3473
+[2025-08-30 14:12:37 +0000] [3474] [INFO] Booting worker with pid: 3474
+[2025-08-30 14:14:19,026] ERROR in app: Exception on /api/start [POST]
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/binance-python/app.py", line 628, in start_bot
+    bot_instance = TradingBot()
+  File "/opt/binance-python/app.py", line 266, in __init__
+    self.api = BinanceFutures()
+  File "/opt/binance-python/app.py", line 163, in __init__
+    self.client = Client(api_key, api_secret, testnet=testnet)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 51, in __init__
+    self.ping()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 344, in ping
+    return self._get("ping", version=self.PRIVATE_API_VERSION)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 180, in _get
+    return self._request_api("get", path, signed, version, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 117, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 88, in _request
+    self.response = getattr(self.session, method)(uri, headers=headers, data=data, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 922, in _ssl_wrap_socket_and_match_hostname
+    context = create_urllib3_context(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 303, in create_urllib3_context
+    context.minimum_version = TLSVersion.TLSv1_2
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  [Previous line repeated 471 more times]
+RecursionError: maximum recursion depth exceeded
+[2025-08-30 14:15:11 +0000] [3458] [INFO] Handling signal: term
+[2025-08-30 14:15:12 +0000] [3473] [INFO] Worker exiting (pid: 3473)
+[2025-08-30 14:15:15 +0000] [3474] [INFO] Worker exiting (pid: 3474)
+[2025-08-30 14:15:26 +0000] [3472] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 14:15:26 +0000] [3472] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 14:15:26 +0000] [3472] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 14:15:26 +0000] [3472] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 14:15:30,130] ERROR in app: Exception on /api/start [POST]
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/binance-python/app.py", line 628, in start_bot
+  File "/opt/binance-python/app.py", line 266, in __init__
+    if __name__ == '__main__':
+  File "/opt/binance-python/app.py", line 163, in __init__
+    log.error(f"❌ Error connecting to Binance: {e}")
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 51, in __init__
+    self.ping()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 344, in ping
+    return self._get("ping", version=self.PRIVATE_API_VERSION)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 180, in _get
+    return self._request_api("get", path, signed, version, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 117, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 88, in _request
+    self.response = getattr(self.session, method)(uri, headers=headers, data=data, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 922, in _ssl_wrap_socket_and_match_hostname
+    context = create_urllib3_context(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 303, in create_urllib3_context
+    context.minimum_version = TLSVersion.TLSv1_2
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  [Previous line repeated 471 more times]
+RecursionError: maximum recursion depth exceeded
+[2025-08-30 14:15:30 +0000] [3472] [INFO] Worker exiting (pid: 3472)
+[2025-08-30 14:15:30 +0000] [3458] [INFO] Shutting down: Master
+[2025-08-30 14:15:32 +0000] [4013] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 14:15:32 +0000] [4013] [INFO] Listening at: http://0.0.0.0:5000 (4013)
+[2025-08-30 14:15:32 +0000] [4013] [INFO] Using worker: eventlet
+[2025-08-30 14:15:32 +0000] [4022] [INFO] Booting worker with pid: 4022
+[2025-08-30 14:15:32 +0000] [4023] [INFO] Booting worker with pid: 4023
+[2025-08-30 14:15:32 +0000] [4024] [INFO] Booting worker with pid: 4024
+[2025-08-30 14:16:57 +0000] [4013] [ERROR] Unhandled exception in main loop
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 208, in run
+    self.sleep()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 359, in sleep
+    ready = select.select([self.PIPE[0]], [], [], 1.0)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/green/select.py", line 80, in select
+    return hub.switch()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/hub.py", line 310, in switch
+    return self.greenlet.switch()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/hub.py", line 362, in run
+    self.wait(sleep_time)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/poll.py", line 80, in wait
+    presult = self.do_poll(seconds)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/epolls.py", line 31, in do_poll
+    return self.poll.poll(seconds)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 193, in signal
+    self.wakeup()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 334, in wakeup
+    os.write(self.PIPE[1], b'.')
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/green/os.py", line 74, in write
+    hubs.trampoline(fd, write=True)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/__init__.py", line 139, in trampoline
+    raise RuntimeError('do not call blocking functions from the mainloop')
+RuntimeError: do not call blocking functions from the mainloop
+[2025-08-30 14:16:57 +0000] [4023] [INFO] Worker exiting (pid: 4023)
+[2025-08-30 14:16:57 +0000] [4024] [INFO] Worker exiting (pid: 4024)
+[2025-08-30 14:16:57 +0000] [4022] [INFO] Worker exiting (pid: 4022)
+[2025-08-30 14:16:59 +0000] [4235] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 14:16:59 +0000] [4235] [INFO] Listening at: http://0.0.0.0:5000 (4235)
+[2025-08-30 14:16:59 +0000] [4235] [INFO] Using worker: eventlet
+[2025-08-30 14:16:59 +0000] [4243] [INFO] Booting worker with pid: 4243
+[2025-08-30 14:16:59 +0000] [4244] [INFO] Booting worker with pid: 4244
+[2025-08-30 14:16:59 +0000] [4245] [INFO] Booting worker with pid: 4245
+[2025-08-30 14:18:12 +0000] [4235] [ERROR] Unhandled exception in main loop
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 208, in run
+    self.sleep()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 359, in sleep
+    ready = select.select([self.PIPE[0]], [], [], 1.0)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/green/select.py", line 80, in select
+    return hub.switch()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/hub.py", line 310, in switch
+    return self.greenlet.switch()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/hub.py", line 362, in run
+    self.wait(sleep_time)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/poll.py", line 80, in wait
+    presult = self.do_poll(seconds)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/epolls.py", line 31, in do_poll
+    return self.poll.poll(seconds)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 193, in signal
+    self.wakeup()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 334, in wakeup
+    os.write(self.PIPE[1], b'.')
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/green/os.py", line 74, in write
+    hubs.trampoline(fd, write=True)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/eventlet/hubs/__init__.py", line 139, in trampoline
+    raise RuntimeError('do not call blocking functions from the mainloop')
+RuntimeError: do not call blocking functions from the mainloop
+[2025-08-30 14:18:13 +0000] [4243] [INFO] Worker exiting (pid: 4243)
+[2025-08-30 14:18:13 +0000] [4244] [INFO] Worker exiting (pid: 4244)
+[2025-08-30 14:18:13 +0000] [4245] [INFO] Worker exiting (pid: 4245)
+[2025-08-30 14:18:15 +0000] [4515] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 14:18:15 +0000] [4515] [INFO] Listening at: http://0.0.0.0:5000 (4515)
+[2025-08-30 14:18:15 +0000] [4515] [INFO] Using worker: eventlet
+[2025-08-30 14:18:15 +0000] [4524] [INFO] Booting worker with pid: 4524
+[2025-08-30 14:18:15 +0000] [4525] [INFO] Booting worker with pid: 4525
+[2025-08-30 14:18:15 +0000] [4526] [INFO] Booting worker with pid: 4526
+[2025-08-30 14:18:21,390] ERROR in app: Exception on /api/start [POST]
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/binance-python/app.py", line 358, in start_bot
+    bot_instance = TradingBot()
+  File "/opt/binance-python/app.py", line 253, in __init__
+    self.api = BinanceFutures()
+  File "/opt/binance-python/app.py", line 150, in __init__
+    self.client = Client(api_key, api_secret, testnet=testnet)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 51, in __init__
+    self.ping()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 344, in ping
+    return self._get("ping", version=self.PRIVATE_API_VERSION)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 180, in _get
+    return self._request_api("get", path, signed, version, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 117, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 88, in _request
+    self.response = getattr(self.session, method)(uri, headers=headers, data=data, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 922, in _ssl_wrap_socket_and_match_hostname
+    context = create_urllib3_context(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 303, in create_urllib3_context
+    context.minimum_version = TLSVersion.TLSv1_2
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  [Previous line repeated 471 more times]
+RecursionError: maximum recursion depth exceeded
+[2025-08-30 14:18:43,911] ERROR in app: Exception on /api/start [POST]
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/binance-python/app.py", line 358, in start_bot
+    bot_instance = TradingBot()
+  File "/opt/binance-python/app.py", line 253, in __init__
+    self.api = BinanceFutures()
+  File "/opt/binance-python/app.py", line 150, in __init__
+    self.client = Client(api_key, api_secret, testnet=testnet)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 51, in __init__
+    self.ping()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 344, in ping
+    return self._get("ping", version=self.PRIVATE_API_VERSION)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 180, in _get
+    return self._request_api("get", path, signed, version, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 117, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 88, in _request
+    self.response = getattr(self.session, method)(uri, headers=headers, data=data, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 922, in _ssl_wrap_socket_and_match_hostname
+    context = create_urllib3_context(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 303, in create_urllib3_context
+    context.minimum_version = TLSVersion.TLSv1_2
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  [Previous line repeated 471 more times]
+RecursionError: maximum recursion depth exceeded
+[2025-08-30 14:20:06 +0000] [4515] [INFO] Handling signal: term
+[2025-08-30 14:20:07 +0000] [4525] [INFO] Worker exiting (pid: 4525)
+[2025-08-30 14:20:15 +0000] [4524] [INFO] Worker exiting (pid: 4524)
+[2025-08-30 14:20:36 +0000] [4515] [INFO] Shutting down: Master
+[2025-08-30 14:20:57 +0000] [802] [INFO] Starting gunicorn 23.0.0
+[2025-08-30 14:20:57 +0000] [802] [INFO] Listening at: http://0.0.0.0:5000 (802)
+[2025-08-30 14:20:57 +0000] [802] [INFO] Using worker: eventlet
+[2025-08-30 14:20:57 +0000] [900] [INFO] Booting worker with pid: 900
+[2025-08-30 14:20:57 +0000] [902] [INFO] Booting worker with pid: 902
+[2025-08-30 14:20:57 +0000] [903] [INFO] Booting worker with pid: 903
+[2025-08-30 14:21:17,300] ERROR in app: Exception on /api/start [POST]
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/binance-python/app.py", line 358, in start_bot
+    bot_instance = TradingBot()
+  File "/opt/binance-python/app.py", line 253, in __init__
+    self.api = BinanceFutures()
+  File "/opt/binance-python/app.py", line 150, in __init__
+    self.client = Client(api_key, api_secret, testnet=testnet)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 51, in __init__
+    self.ping()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 344, in ping
+    return self._get("ping", version=self.PRIVATE_API_VERSION)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 180, in _get
+    return self._request_api("get", path, signed, version, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 117, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 88, in _request
+    self.response = getattr(self.session, method)(uri, headers=headers, data=data, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 922, in _ssl_wrap_socket_and_match_hostname
+    context = create_urllib3_context(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 303, in create_urllib3_context
+    context.minimum_version = TLSVersion.TLSv1_2
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  [Previous line repeated 471 more times]
+RecursionError: maximum recursion depth exceeded
+[2025-08-30 14:21:45,525] ERROR in app: Exception on /api/start [POST]
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/binance-python/app.py", line 358, in start_bot
+    bot_instance = TradingBot()
+  File "/opt/binance-python/app.py", line 253, in __init__
+    self.api = BinanceFutures()
+  File "/opt/binance-python/app.py", line 150, in __init__
+    self.client = Client(api_key, api_secret, testnet=testnet)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 51, in __init__
+    self.ping()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 344, in ping
+    return self._get("ping", version=self.PRIVATE_API_VERSION)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 180, in _get
+    return self._request_api("get", path, signed, version, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 117, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/binance/client.py", line 88, in _request
+    self.response = getattr(self.session, method)(uri, headers=headers, data=data, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/connection.py", line 922, in _ssl_wrap_socket_and_match_hostname
+    context = create_urllib3_context(
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/urllib3/util/ssl_.py", line 303, in create_urllib3_context
+    context.minimum_version = TLSVersion.TLSv1_2
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  File "/usr/lib/python3.10/ssl.py", line 604, in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+  [Previous line repeated 471 more times]
+RecursionError: maximum recursion depth exceeded
+[2025-08-30 14:25:54 +0000] [802] [INFO] Handling signal: term
+[2025-08-30 14:25:56 +0000] [900] [INFO] Worker exiting (pid: 900)
+[2025-08-30 14:26:14 +0000] [903] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 14:26:15 +0000] [903] [INFO] Worker exiting (pid: 903)
+[2025-08-30 14:26:16 +0000] [902] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 14:26:16 +0000] [902] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 14:26:16 +0000] [902] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 64, in handle
+    util.reraise(*sys.exc_info())
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/util.py", line 640, in reraise
+    raise value
+  File "/opt/binance-python/venv/lib/python3.10/site-packages/gunicorn/workers/base_async.py", line 37, in handle
+    listener_name = listener.getsockname()
+OSError: [Errno 9] Bad file descriptor
+[2025-08-30 14:26:16 +0000] [902] [INFO] Worker exiting (pid: 902)
+[2025-08-30 14:26:17 +0000] [802] [INFO] Shutting down: Master
