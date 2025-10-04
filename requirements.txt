@@ -11,8 +11,8 @@ eventlet==0.33.3
 python-binance==1.0.19
 
 #Data handling and numerical operations
-pandas==2.1.0
-numpy==1.25.2
+pandas==2.2.2
+numpy==1.26.4
 
 #Database connectivity
 SQLAlchemy==2.0.20
