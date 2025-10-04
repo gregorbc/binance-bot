@@ -151,6 +151,36 @@ app_state = {
 }
 state_lock = threading.Lock()
 
+# -------------------- DATABASE HELPER -------------------- #
+def _save_trade_to_db(trade_record: Dict):
+    """Saves a completed trade record to the database."""
+    db = SessionLocal()
+    try:
+        # Ensure date is correctly formatted as YYYY-MM-DD string
+        trade_date = datetime.fromtimestamp(trade_record["timestamp"]).strftime('%Y-%m-%d')
+
+        trade = Trade(
+            symbol=trade_record["symbol"],
+            side=trade_record["side"],
+            quantity=trade_record["quantity"],
+            entry_price=trade_record["entryPrice"],
+            exit_price=trade_record["exitPrice"],
+            pnl=trade_record["pnl"],
+            roe=trade_record["roe"],
+            leverage=config.LEVERAGE,  # Assuming global config leverage
+            close_type=trade_record["closeType"],
+            timestamp=datetime.fromtimestamp(trade_record["timestamp"]),
+            date=trade_date
+        )
+        db.add(trade)
+        db.commit()
+        log.info(f"💾 Trade for {trade.symbol} saved to database.")
+    except Exception as e:
+        log.error(f"Error saving trade to database: {e}", exc_info=True)
+        db.rollback()
+    finally:
+        db.close()
+
 # -------------------- BINANCE CLIENT -------------------- #
 class BinanceFutures:
     def __init__(self):
@@ -674,6 +704,7 @@ class TradingBot:
                                         "date": datetime.now().isoformat()
                                     }
                                     app_state["trades_history"].append(trade_record)
+                                    _save_trade_to_db(trade_record)
                                     
                                     if realized_pnl >= 0:
                                         stats["wins"] += 1
@@ -1130,6 +1161,7 @@ def close_position_api():
                     "date": datetime.now().isoformat()
                 }
                 app_state["trades_history"].append(trade_record)
+                _save_trade_to_db(trade_record)
                 
                 if realized_pnl >= 0:
                     stats["wins"] += 1
@@ -1318,6 +1350,22 @@ def auto_adjust_leverage():
     except Exception as e:
         log.error(f"Error ajustando leverage: {e}")
         return jsonify({"status": "error", "message": str(e)}), 500
+
+@app.route('/api/db_trades')
+def get_db_trades():
+    """Temporary endpoint to verify database writes."""
+    db = SessionLocal()
+    try:
+        trades = db.query(Trade).order_by(desc(Trade.timestamp)).all()
+        return jsonify([{
+            "id": t.id,
+            "symbol": t.symbol,
+            "side": t.side,
+            "pnl": t.pnl,
+            "timestamp": t.timestamp.isoformat()
+        } for t in trades])
+    finally:
+        db.close()
 
 # -------------------- SOCKETIO EVENTS -------------------- #
 @socketio.on('connect')
